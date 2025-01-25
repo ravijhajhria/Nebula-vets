@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+body {
+  font-family: "Avantt Regular";
+}
+
+@font-face {
+  font-family: "Avantt Regular";
+  src: url(./avantt/AvanttTRIAL-Regular-BF6721a86b1a848.otf);
+}
+.roboto-mono {
+  font-family: "Roboto Mono", serif;
+}
+.border-c-liner {
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(90deg, #ffa280 0%, #8fd9d9 100%);
+  border-image-slice: 1;
+}
+.text-underline {
+  text-decoration: underline;
+}
+.swiper-pagination-bullet-active {
+  background-color: #494336 !important;
+}
+.swiper-slide {
+  margin-right: 20px !important;
+  max-width: 300px !important;
+}
