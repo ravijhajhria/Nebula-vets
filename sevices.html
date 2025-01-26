@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nebula vets</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link
+      rel="shortcut icon"
+      href="./assetes/img/png/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-- navbar -->
+    <div class="bg-[#494336] fixed top-0 z-40 w-full">
+      <div class="max-w-[1440px] px-[30px] md:px-[40px] xl:px-[50px] mx-auto">
+        <div
+          class="flex justify-between py-6 md:pt-[11px] md:pb-[18px] items-center gap-[50px]"
+        >
+          <a class="max-w-[90px] md:max-w-[100px] lg:max-w-[114px]" href="#"
+            ><img
+              class="w-full"
+              src="./assetes/img/png/Logo (1).png"
+              alt="logo"
+          /></a>
+          <div
+            class="flex gap-[30px] xl:gap-[66px] items-center max-[950px]:hidden"
+          >
+            <a
+              class="roboto-mono text-[#D7D9DD] hover:text-white font-medium tracking-[1.4px] text-sm border-b-[2px] border-solid border-transparent hover:border-[white] duration-200"
+              href="#"
+              >SERVICES</a
+            >
+            <a
+              class="roboto-mono text-[#D7D9DD] hover:text-white font-medium tracking-[1.4px] text-sm border-b-[2px] border-solid border-transparent hover:border-[white] duration-200"
+              href="#"
+              >ABOUT US</a
+            >
+            <a
+              class="roboto-mono text-[#D7D9DD] hover:text-white font-medium tracking-[1.4px] text-sm border-b-[2px] border-solid border-transparent hover:border-[white] duration-200"
+              href="#"
+              >LOCATION</a
+            >
+            <a
+              class="roboto-mono text-[#D7D9DD] hover:text-white font-medium tracking-[1.4px] text-sm border-b-[2px] border-solid border-transparent hover:border-[white] duration-200"
+              href="#"
+              >CAREER</a
+            >
+            <a
+              class="roboto-mono text-[#D7D9DD] hover:text-white font-medium tracking-[1.4px] text-sm border-b-[2px] border-solid border-transparent hover:border-[white] duration-200"
+              href="#"
+              >PATIENT PORTAL</a
+            >
+            <a
+              class="roboto-mono text-[#494336] font-medium text-base xl:text-lg py-2 xl:py-3 px-[30px] xl:px-[38px] bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] rounded-[27px] hover:scale-[1.03] duration-200"
+              href="#"
+              >BOOK NOW</a
+            >
+          </div>
+          <!-- Button to Open Sidebar -->
+          <button
+            id="open-btn"
+            class="fixed top-4 right-4 text-white px-4 py-2 rounded-lg max-[950px]:block hidden mt-2"
+          >
+            <img
+              class="max-w-[58px] md:max-w-[68px]"
+              src="./assetes/img/png/sidebar-btn.png"
+              alt="sidebar-btn"
+            />
+          </button>
+          <!-- Black Overlay -->
+          <div id="overlay" class="fixed inset-0 bg-black/50 z-40 hidden"></div>
+          <!-- Sidebar -->
+          <div
+            id="sidebar"
+            class="fixed top-0 right-0 h-full w-full min-[500px]:w-[50%] bg-[#494336] text-white transform translate-x-full transition-transform duration-300 z-50"
+          >
+            <div class="flex justify-end p-4">
+              <button id="close-btn" class="text-white text-2xl">×</button>
+            </div>
+            <div class="p-4">
+              <div class="flex flex-col gap-[40px] items-center">
+                <a
+                  class="roboto-mono text-[#D7D9DD] hover:text-white font-medium tracking-[1.4px] text-sm border-b-[2px] border-solid border-transparent hover:border-[white] duration-200"
+                  href="#"
+                  >SERVICES</a
+                >
+                <a
+                  class="roboto-mono text-[#D7D9DD] hover:text-white font-medium tracking-[1.4px] text-sm border-b-[2px] border-solid border-transparent hover:border-[white] duration-200"
+                  href="#"
+                  >ABOUT US</a
+                >
+                <a
+                  class="roboto-mono text-[#D7D9DD] hover:text-white font-medium tracking-[1.4px] text-sm border-b-[2px] border-solid border-transparent hover:border-[white] duration-200"
+                  href="#"
+                  >LOCATION</a
+                >
+                <a
+                  class="roboto-mono text-[#D7D9DD] hover:text-white font-medium tracking-[1.4px] text-sm border-b-[2px] border-solid border-transparent hover:border-[white] duration-200"
+                  href="#"
+                  >CAREER</a
+                >
+                <a
+                  class="roboto-mono text-[#D7D9DD] hover:text-white font-medium tracking-[1.4px] text-sm border-b-[2px] border-solid border-transparent hover:border-[white] duration-200"
+                  href="#"
+                  >PATIENT PORTAL</a
+                >
+                <div>
+                  <a
+                    class="roboto-mono text-[#494336] font-medium text-base xl:text-lg py-2 xl:py-3 px-[30px] xl:px-[38px] bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] rounded-[27px] hover:scale-[1.03] duration-200"
+                    href="#"
+                    >BOOK NOW</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const openBtn = document.getElementById("open-btn");
+      const closeBtn = document.getElementById("close-btn");
+      const sidebar = document.getElementById("sidebar");
+      const overlay = document.getElementById("overlay");
+
+      openBtn.addEventListener("click", () => {
+        sidebar.classList.remove("translate-x-full");
+        sidebar.classList.add("translate-x-0");
+        overlay.classList.remove("hidden");
+      });
+
+      closeBtn.addEventListener("click", () => {
+        sidebar.classList.remove("translate-x-0");
+        sidebar.classList.add("translate-x-full");
+        overlay.classList.add("hidden");
+      });
+
+      // Close the sidebar and overlay when clicking on the overlay
+      overlay.addEventListener("click", () => {
+        sidebar.classList.remove("translate-x-0");
+        sidebar.classList.add("translate-x-full");
+        overlay.classList.add("hidden");
+      });
+    </script>
+  </body>
+</html>
