@@ -16,6 +16,12 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
   </head>
+  <style>
+    .swiper-slide {
+      margin-right: 20px !important;
+      max-width: 300px !important;
+    }
+  </style>
   <body>
     <!-- navbar -->
     <div class="bg-[#494336] fixed top-0 z-40 w-full">
@@ -33,32 +39,32 @@
             class="flex gap-[30px] xl:gap-[66px] items-center max-[950px]:hidden"
           >
             <a
-              class="roboto-mono text-[#D7D9DD] hover:text-white font-medium tracking-[1.4px] text-sm border-b-[2px] border-solid border-transparent hover:border-[white] duration-200"
-              href="#"
+              class="roboto-mono text-[#D7D9DD] hover:text-white font-medium tracking-[1.4px] text-sm links duration-700"
+              href="./sevices.html"
               >SERVICES</a
             >
             <a
-              class="roboto-mono text-[#D7D9DD] hover:text-white font-medium tracking-[1.4px] text-sm border-b-[2px] border-solid border-transparent hover:border-[white] duration-200"
-              href="#"
+              class="roboto-mono text-[#D7D9DD] hover:text-white font-medium tracking-[1.4px] text-sm links duration-700"
+              href="./about.html"
               >ABOUT US</a
             >
             <a
-              class="roboto-mono text-[#D7D9DD] hover:text-white font-medium tracking-[1.4px] text-sm border-b-[2px] border-solid border-transparent hover:border-[white] duration-200"
-              href="#"
+              class="roboto-mono text-[#D7D9DD] hover:text-white font-medium tracking-[1.4px] text-sm links duration-700"
+              href="./location.html"
               >LOCATION</a
             >
             <a
-              class="roboto-mono text-[#D7D9DD] hover:text-white font-medium tracking-[1.4px] text-sm border-b-[2px] border-solid border-transparent hover:border-[white] duration-200"
-              href="#"
+              class="roboto-mono text-[#D7D9DD] hover:text-white font-medium tracking-[1.4px] text-sm links duration-700"
+              href="./carrer.html"
               >CAREER</a
             >
             <a
-              class="roboto-mono text-[#D7D9DD] hover:text-white font-medium tracking-[1.4px] text-sm border-b-[2px] border-solid border-transparent hover:border-[white] duration-200"
+              class="roboto-mono text-[#D7D9DD] hover:text-white font-medium tracking-[1.4px] text-sm links duration-700"
               href="#"
               >PATIENT PORTAL</a
             >
             <a
-              class="roboto-mono text-[#494336] font-medium text-base xl:text-lg py-2 xl:py-3 px-[30px] xl:px-[38px] bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] rounded-[27px] hover:scale-[1.03] duration-200"
+              class="roboto-mono text-[#494336] font-medium text-base xl:text-lg py-2 xl:py-3 px-[30px] xl:px-[38px] bg-gradient !rounded-[27px] duration-300 hover:shadow-xl hover:text-[#D7D9DD]"
               href="#"
               >BOOK NOW</a
             >
@@ -81,42 +87,53 @@
             id="sidebar"
             class="fixed top-0 right-0 h-full w-full min-[500px]:w-[50%] bg-[#494336] text-white transform translate-x-full transition-transform duration-300 z-50"
           >
-            <div class="flex justify-end p-4">
-              <button id="close-btn" class="text-white text-2xl">×</button>
-            </div>
-            <div class="p-4">
-              <div class="flex flex-col gap-[40px] items-center">
-                <a
-                  class="roboto-mono text-[#D7D9DD] hover:text-white font-medium tracking-[1.4px] text-sm border-b-[2px] border-solid border-transparent hover:border-[white] duration-200"
-                  href="#"
-                  >SERVICES</a
-                >
-                <a
-                  class="roboto-mono text-[#D7D9DD] hover:text-white font-medium tracking-[1.4px] text-sm border-b-[2px] border-solid border-transparent hover:border-[white] duration-200"
-                  href="#"
-                  >ABOUT US</a
-                >
-                <a
-                  class="roboto-mono text-[#D7D9DD] hover:text-white font-medium tracking-[1.4px] text-sm border-b-[2px] border-solid border-transparent hover:border-[white] duration-200"
-                  href="#"
-                  >LOCATION</a
-                >
-                <a
-                  class="roboto-mono text-[#D7D9DD] hover:text-white font-medium tracking-[1.4px] text-sm border-b-[2px] border-solid border-transparent hover:border-[white] duration-200"
-                  href="#"
-                  >CAREER</a
-                >
-                <a
-                  class="roboto-mono text-[#D7D9DD] hover:text-white font-medium tracking-[1.4px] text-sm border-b-[2px] border-solid border-transparent hover:border-[white] duration-200"
-                  href="#"
-                  >PATIENT PORTAL</a
-                >
-                <div>
+            <div class="relative">
+              <div
+                class="absolute hidden max-[500px]:block top-6 left-[30px] max-w-[90px]"
+              >
+                <img
+                  class="w-full"
+                  src="./assetes/img/png/Logo (1).png"
+                  alt="logo"
+                />
+              </div>
+              <div class="flex justify-end p-4 pt-7 pr-9">
+                <button id="close-btn" class="text-white text-5xl">×</button>
+              </div>
+              <div class="px-4 pt-24 pb-4">
+                <div class="flex flex-col gap-[40px] items-center">
                   <a
-                    class="roboto-mono text-[#494336] font-medium text-base xl:text-lg py-2 xl:py-3 px-[30px] xl:px-[38px] bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] rounded-[27px] hover:scale-[1.03] duration-200"
-                    href="#"
-                    >BOOK NOW</a
+                    class="roboto-mono text-[#D7D9DD] hover:text-white font-medium tracking-[1.4px] text-sm links duration-700"
+                    href="./sevices.html"
+                    >SERVICES</a
                   >
+                  <a
+                    class="roboto-mono text-[#D7D9DD] hover:text-white font-medium tracking-[1.4px] text-sm links duration-700"
+                    href="./about.html"
+                    >ABOUT US</a
+                  >
+                  <a
+                    class="roboto-mono text-[#D7D9DD] hover:text-white font-medium tracking-[1.4px] text-sm links duration-700"
+                    href="./location.html"
+                    >LOCATION</a
+                  >
+                  <a
+                    class="roboto-mono text-[#D7D9DD] hover:text-white font-medium tracking-[1.4px] text-sm links duration-700"
+                    href="./carrer.html"
+                    >CAREER</a
+                  >
+                  <a
+                    class="roboto-mono text-[#D7D9DD] hover:text-white font-medium tracking-[1.4px] text-sm links duration-700"
+                    href="#"
+                    >PATIENT PORTAL</a
+                  >
+                  <div>
+                    <a
+                      class="roboto-mono text-[#494336] font-medium text-base xl:text-lg py-2 xl:py-3 px-[30px] xl:px-[38px] bg-gradient rounded-[27px] btn-hover duration-300"
+                      href="#"
+                      >BOOK NOW</a
+                    >
+                  </div>
                 </div>
               </div>
             </div>
@@ -144,11 +161,13 @@
             >
               Reinventing Pet Medicine
             </p>
-            <a
-              class="roboto-mono text-[#494336] font-medium text-base xl:text-lg py-2 xl:py-3 px-[30px] xl:px-[38px] bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] rounded-[27px] hover:scale-[1.03] duration-200"
-              href="#"
-              >BOOK NOW</a
-            >
+            <div>
+              <a
+                class="roboto-mono text-[#494336] font-medium text-base xl:text-lg py-2 xl:py-3 px-[30px] xl:px-[38px] bg-gradient !rounded-[27px] duration-300 hover:shadow-xl hover:text-[#D7D9DD]"
+                href="#"
+                >BOOK NOW</a
+              >
+            </div>
           </div>
         </div>
         <div class="sm:hidden max-w-[640px]">
@@ -267,7 +286,54 @@
                   <span
                     class="bdt-ep-accordion-icon-opened hidden second-img text-5xl text-[white]"
                   >
-                    -
+                    <svg
+                      class="max-md:w-6 rotate-45"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="30"
+                      height="30"
+                      viewBox="0 0 30 30"
+                      fill="none"
+                    >
+                      <line
+                        y1="15.1136"
+                        x2="30"
+                        y2="15.1136"
+                        stroke="url(#paint0_linear_1204_1399)"
+                        stroke-width="2.5"
+                      />
+                      <line
+                        x1="15.1134"
+                        y1="30"
+                        x2="15.1134"
+                        y2="7.28523e-08"
+                        stroke="url(#paint1_linear_1204_1399)"
+                        stroke-width="2.5"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="paint0_linear_1204_1399"
+                          x1="0"
+                          y1="16.3636"
+                          x2="30"
+                          y2="16.3636"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#FFA280" />
+                          <stop offset="1" stop-color="#8FD9D9" />
+                        </linearGradient>
+                        <linearGradient
+                          id="paint1_linear_1204_1399"
+                          x1="16.3634"
+                          y1="30"
+                          x2="16.3634"
+                          y2="0"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#FFA280" />
+                          <stop offset="1" stop-color="#8FD9D9" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
                   </span>
                 </div>
                 <p
@@ -343,7 +409,54 @@
                   <span
                     class="bdt-ep-accordion-icon-opened hidden second-img text-5xl text-[white]"
                   >
-                    -
+                    <svg
+                      class="max-md:w-6 rotate-45"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="30"
+                      height="30"
+                      viewBox="0 0 30 30"
+                      fill="none"
+                    >
+                      <line
+                        y1="15.1136"
+                        x2="30"
+                        y2="15.1136"
+                        stroke="url(#paint0_linear_1204_1399)"
+                        stroke-width="2.5"
+                      />
+                      <line
+                        x1="15.1134"
+                        y1="30"
+                        x2="15.1134"
+                        y2="7.28523e-08"
+                        stroke="url(#paint1_linear_1204_1399)"
+                        stroke-width="2.5"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="paint0_linear_1204_1399"
+                          x1="0"
+                          y1="16.3636"
+                          x2="30"
+                          y2="16.3636"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#FFA280" />
+                          <stop offset="1" stop-color="#8FD9D9" />
+                        </linearGradient>
+                        <linearGradient
+                          id="paint1_linear_1204_1399"
+                          x1="16.3634"
+                          y1="30"
+                          x2="16.3634"
+                          y2="0"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#FFA280" />
+                          <stop offset="1" stop-color="#8FD9D9" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
                   </span>
                 </div>
                 <p
@@ -419,7 +532,54 @@
                   <span
                     class="bdt-ep-accordion-icon-opened hidden second-img text-5xl text-[white]"
                   >
-                    -
+                    <svg
+                      class="max-md:w-6 rotate-45"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="30"
+                      height="30"
+                      viewBox="0 0 30 30"
+                      fill="none"
+                    >
+                      <line
+                        y1="15.1136"
+                        x2="30"
+                        y2="15.1136"
+                        stroke="url(#paint0_linear_1204_1399)"
+                        stroke-width="2.5"
+                      />
+                      <line
+                        x1="15.1134"
+                        y1="30"
+                        x2="15.1134"
+                        y2="7.28523e-08"
+                        stroke="url(#paint1_linear_1204_1399)"
+                        stroke-width="2.5"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="paint0_linear_1204_1399"
+                          x1="0"
+                          y1="16.3636"
+                          x2="30"
+                          y2="16.3636"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#FFA280" />
+                          <stop offset="1" stop-color="#8FD9D9" />
+                        </linearGradient>
+                        <linearGradient
+                          id="paint1_linear_1204_1399"
+                          x1="16.3634"
+                          y1="30"
+                          x2="16.3634"
+                          y2="0"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#FFA280" />
+                          <stop offset="1" stop-color="#8FD9D9" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
                   </span>
                 </div>
                 <p
@@ -497,7 +657,54 @@
                   <span
                     class="bdt-ep-accordion-icon-opened hidden second-img text-5xl text-[white]"
                   >
-                    -
+                    <svg
+                      class="max-md:w-6 rotate-45"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="30"
+                      height="30"
+                      viewBox="0 0 30 30"
+                      fill="none"
+                    >
+                      <line
+                        y1="15.1136"
+                        x2="30"
+                        y2="15.1136"
+                        stroke="url(#paint0_linear_1204_1399)"
+                        stroke-width="2.5"
+                      />
+                      <line
+                        x1="15.1134"
+                        y1="30"
+                        x2="15.1134"
+                        y2="7.28523e-08"
+                        stroke="url(#paint1_linear_1204_1399)"
+                        stroke-width="2.5"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="paint0_linear_1204_1399"
+                          x1="0"
+                          y1="16.3636"
+                          x2="30"
+                          y2="16.3636"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#FFA280" />
+                          <stop offset="1" stop-color="#8FD9D9" />
+                        </linearGradient>
+                        <linearGradient
+                          id="paint1_linear_1204_1399"
+                          x1="16.3634"
+                          y1="30"
+                          x2="16.3634"
+                          y2="0"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#FFA280" />
+                          <stop offset="1" stop-color="#8FD9D9" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
                   </span>
                 </div>
                 <p
@@ -573,7 +780,54 @@
                   <span
                     class="bdt-ep-accordion-icon-opened hidden second-img text-5xl text-[white]"
                   >
-                    -
+                    <svg
+                      class="max-md:w-6 rotate-45"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="30"
+                      height="30"
+                      viewBox="0 0 30 30"
+                      fill="none"
+                    >
+                      <line
+                        y1="15.1136"
+                        x2="30"
+                        y2="15.1136"
+                        stroke="url(#paint0_linear_1204_1399)"
+                        stroke-width="2.5"
+                      />
+                      <line
+                        x1="15.1134"
+                        y1="30"
+                        x2="15.1134"
+                        y2="7.28523e-08"
+                        stroke="url(#paint1_linear_1204_1399)"
+                        stroke-width="2.5"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="paint0_linear_1204_1399"
+                          x1="0"
+                          y1="16.3636"
+                          x2="30"
+                          y2="16.3636"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#FFA280" />
+                          <stop offset="1" stop-color="#8FD9D9" />
+                        </linearGradient>
+                        <linearGradient
+                          id="paint1_linear_1204_1399"
+                          x1="16.3634"
+                          y1="30"
+                          x2="16.3634"
+                          y2="0"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#FFA280" />
+                          <stop offset="1" stop-color="#8FD9D9" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
                   </span>
                 </div>
                 <p
@@ -649,7 +903,54 @@
                   <span
                     class="bdt-ep-accordion-icon-opened hidden second-img text-5xl text-[white]"
                   >
-                    -
+                    <svg
+                      class="max-md:w-6 rotate-45"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="30"
+                      height="30"
+                      viewBox="0 0 30 30"
+                      fill="none"
+                    >
+                      <line
+                        y1="15.1136"
+                        x2="30"
+                        y2="15.1136"
+                        stroke="url(#paint0_linear_1204_1399)"
+                        stroke-width="2.5"
+                      />
+                      <line
+                        x1="15.1134"
+                        y1="30"
+                        x2="15.1134"
+                        y2="7.28523e-08"
+                        stroke="url(#paint1_linear_1204_1399)"
+                        stroke-width="2.5"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="paint0_linear_1204_1399"
+                          x1="0"
+                          y1="16.3636"
+                          x2="30"
+                          y2="16.3636"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#FFA280" />
+                          <stop offset="1" stop-color="#8FD9D9" />
+                        </linearGradient>
+                        <linearGradient
+                          id="paint1_linear_1204_1399"
+                          x1="16.3634"
+                          y1="30"
+                          x2="16.3634"
+                          y2="0"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#FFA280" />
+                          <stop offset="1" stop-color="#8FD9D9" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
                   </span>
                 </div>
                 <p
@@ -685,11 +986,13 @@
           provide the highest level of support and assistance. Count on us to be
           there for you and your beloved companion every step of the way.
         </p>
-        <a
-          class="roboto-mono text-[#494336] font-medium text-base xl:text-lg py-2 xl:py-3 px-[30px] xl:px-[38px] bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] rounded-[27px] hover:scale-[1.03] duration-200"
-          href="#"
-          >LEARN MORE</a
-        >
+        <div>
+          <a
+            class="roboto-mono text-[#494336] font-medium text-base xl:text-lg py-2 xl:py-3 px-[30px] xl:px-[38px] bg-gradient rounded-[27px] btn-hover duration-300 hover:shadow-xl hover:text-[white]"
+            href="#"
+            >LEARN MORE</a
+          >
+        </div>
       </div>
       <div
         class="swiper mySwiper !pb-[90px] sm:!pb-30 lg:!pb-[140px] !max-w-[1440px] !pl-[32px] md:!px-[70px] !mx-auto"
@@ -895,7 +1198,7 @@
               </p>
               <div class="mt-12 pb-[60px]">
                 <a
-                  class="roboto-mono text-[#494336] font-medium text-base xl:text-lg py-2 xl:py-3 px-[30px] xl:px-[38px] bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] rounded-[27px] hover:scale-[1.03] duration-200"
+                  class="roboto-mono text-[#494336] font-medium text-base xl:text-lg py-2 xl:py-3 px-[30px] xl:px-[38px] bg-gradient rounded-[27px] btn-hover duration-300 hover:shadow-xl hover:text-[white]"
                   href="#"
                   >LEARN MORE</a
                 >
@@ -934,11 +1237,13 @@
               Our Mission is to establish a new standard of excellence in
               veterinary care, driven by an unwavering ethical conscience.
             </p>
-            <a
-              class="roboto-mono text-[#494336] font-medium text-base xl:text-lg py-2 xl:py-3 px-[30px] xl:px-[38px] bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] rounded-[27px] hover:scale-[1.03] duration-200"
-              href="#"
-              >BOOK NOW</a
-            >
+            <div>
+              <a
+                class="roboto-mono text-[#494336] font-medium text-base xl:text-lg py-2 xl:py-3 px-[30px] xl:px-[38px] bg-gradient rounded-[27px] btn-hover duration-300 hover:shadow-2xl hover:text-[white]"
+                href="#"
+                >BOOK NOW</a
+              >
+            </div>
           </div>
         </div>
       </div>
@@ -962,7 +1267,10 @@
                 placeholder="Email"
               />
               <div class="flex gap-5 mt-[15px] md:mt-[22px]">
-                <a class="hover:scale-[1.05] duration-200" href="#"
+                <a
+                  class="hover:scale-[1.06] duration-200"
+                  target="_blank"
+                  href="http://facebook.com/"
                   ><svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="50"
@@ -989,7 +1297,10 @@
                     </defs>
                   </svg>
                 </a>
-                <a class="hover:scale-[1.05] duration-200" href="#"
+                <a
+                  class="hover:scale-[1.06] duration-200"
+                  target="_blank"
+                  href="https://in.linkedin.com/"
                   ><svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="50"
@@ -1016,7 +1327,10 @@
                     </defs>
                   </svg>
                 </a>
-                <a class="hover:scale-[1.05] duration-200" href="#"
+                <a
+                  class="hover:scale-[1.06] duration-200"
+                  target="_blank"
+                  href="https://www.instagram.com/"
                   ><svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="50"
@@ -1056,23 +1370,23 @@
                 </p>
                 <div class="flex flex-col gap-[7px]">
                   <a
-                    class="text-[#D7D9DD] text-sm sm:text-base text-underline"
-                    href="#"
+                    class="text-[#D7D9DD] text-sm sm:text-base text-underline duration-700 links"
+                    href="./sevices.html"
                     >Preventive Care</a
                   >
                   <a
-                    class="text-[#D7D9DD] text-sm sm:text-base text-underline"
-                    href="#"
+                    class="text-[#D7D9DD] text-sm sm:text-base text-underline duration-700 links"
+                    href="./sevices.html"
                     >Sick Patient Care</a
                   >
                   <a
-                    class="text-[#D7D9DD] text-sm sm:text-base text-underline"
-                    href="#"
+                    class="text-[#D7D9DD] text-sm sm:text-base text-underline duration-700 links"
+                    href="./sevices.html"
                     >Surgery</a
                   >
                   <a
-                    class="text-[#D7D9DD] text-sm sm:text-base text-underline"
-                    href="#"
+                    class="text-[#D7D9DD] text-sm sm:text-base text-underline duration-700 links"
+                    href="./sevices.html"
                     >Additional Services</a
                   >
                 </div>
@@ -1085,13 +1399,13 @@
                 </p>
                 <div class="flex flex-col gap-[7px]">
                   <a
-                    class="text-[#D7D9DD] text-sm sm:text-base text-underline"
-                    href="#"
+                    class="text-[#D7D9DD] text-sm sm:text-base text-underline duration-700 links"
+                    href="./about.html"
                     >About us</a
                   >
                   <a
-                    class="text-[#D7D9DD] text-sm sm:text-base text-underline"
-                    href="#"
+                    class="text-[#D7D9DD] text-sm sm:text-base text-underline duration-700 links"
+                    href="./carrer.html"
                     >Carreers</a
                   >
                 </div>
@@ -1106,13 +1420,13 @@
                 </p>
                 <div class="flex flex-col gap-[7px]">
                   <a
-                    class="text-[#D7D9DD] text-sm sm:text-base text-underline"
-                    href="#"
+                    class="text-[#D7D9DD] text-sm sm:text-base text-underline duration-700 links"
+                    href="tel:(212) 123-4567"
                     >Phone: (212) 123-4567</a
                   >
                   <a
-                    class="text-[#D7D9DD] text-sm sm:text-base text-underline"
-                    href="#"
+                    class="text-[#D7D9DD] text-sm sm:text-base text-underline duration-700 links"
+                    href="mailto:hello@nebulavets.com"
                     >hello@nebulavets.com</a
                   >
                 </div>

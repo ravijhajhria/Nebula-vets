@@ -16,6 +16,12 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
   </head>
+  <style>
+    .swiper-slide {
+      width: 420px !important;
+      height: 420px !important;
+    }
+  </style>
   <body>
     <!-- navbar -->
     <div class="bg-[#494336] fixed top-0 z-40 w-full">
@@ -23,7 +29,9 @@
         <div
           class="flex justify-between py-6 md:pt-[11px] md:pb-[18px] items-center gap-[50px]"
         >
-          <a class="max-w-[90px] md:max-w-[100px] lg:max-w-[114px]" href="#"
+          <a
+            class="max-w-[90px] md:max-w-[100px] lg:max-w-[114px]"
+            href="./index.html"
             ><img
               class="w-full"
               src="./assetes/img/png/Logo (1).png"
@@ -33,32 +41,32 @@
             class="flex gap-[30px] xl:gap-[66px] items-center max-[950px]:hidden"
           >
             <a
-              class="roboto-mono text-[#D7D9DD] hover:text-white font-medium tracking-[1.4px] text-sm border-b-[2px] border-solid border-transparent hover:border-[white] duration-200"
-              href="#"
+              class="roboto-mono text-[#D7D9DD] hover:text-white font-medium tracking-[1.4px] text-sm links duration-700"
+              href="./sevices.html"
               >SERVICES</a
             >
             <a
-              class="roboto-mono text-[#D7D9DD] hover:text-white font-medium tracking-[1.4px] text-sm border-b-[2px] border-solid border-transparent hover:border-[white] duration-200"
-              href="#"
+              class="roboto-mono text-[#D7D9DD] hover:text-white font-medium tracking-[1.4px] text-sm links duration-700"
+              href="./about.html"
               >ABOUT US</a
             >
             <a
-              class="roboto-mono text-[#D7D9DD] hover:text-white font-medium tracking-[1.4px] text-sm border-b-[2px] border-solid border-transparent hover:border-[white] duration-200"
-              href="#"
+              class="roboto-mono text-[#D7D9DD] hover:text-white font-medium tracking-[1.4px] text-sm links duration-700"
+              href="./location.html"
               >LOCATION</a
             >
             <a
-              class="roboto-mono text-[#D7D9DD] hover:text-white font-medium tracking-[1.4px] text-sm border-b-[2px] border-solid border-transparent hover:border-[white] duration-200"
-              href="#"
+              class="roboto-mono text-[#D7D9DD] hover:text-white font-medium tracking-[1.4px] text-sm links duration-700"
+              href="./carrer.html"
               >CAREER</a
             >
             <a
-              class="roboto-mono text-[#D7D9DD] hover:text-white font-medium tracking-[1.4px] text-sm border-b-[2px] border-solid border-transparent hover:border-[white] duration-200"
+              class="roboto-mono text-[#D7D9DD] hover:text-white font-medium tracking-[1.4px] text-sm links duration-700"
               href="#"
               >PATIENT PORTAL</a
             >
             <a
-              class="roboto-mono text-[#494336] font-medium text-base xl:text-lg py-2 xl:py-3 px-[30px] xl:px-[38px] bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] rounded-[27px] hover:scale-[1.03] duration-200"
+              class="roboto-mono text-[#494336] font-medium text-base xl:text-lg py-2 xl:py-3 px-[30px] xl:px-[38px] bg-gradient !rounded-[27px] duration-300 hover:shadow-xl hover:text-[#D7D9DD]"
               href="#"
               >BOOK NOW</a
             >
@@ -81,42 +89,53 @@
             id="sidebar"
             class="fixed top-0 right-0 h-full w-full min-[500px]:w-[50%] bg-[#494336] text-white transform translate-x-full transition-transform duration-300 z-50"
           >
-            <div class="flex justify-end p-4">
-              <button id="close-btn" class="text-white text-2xl">×</button>
-            </div>
-            <div class="p-4">
-              <div class="flex flex-col gap-[40px] items-center">
-                <a
-                  class="roboto-mono text-[#D7D9DD] hover:text-white font-medium tracking-[1.4px] text-sm border-b-[2px] border-solid border-transparent hover:border-[white] duration-200"
-                  href="#"
-                  >SERVICES</a
-                >
-                <a
-                  class="roboto-mono text-[#D7D9DD] hover:text-white font-medium tracking-[1.4px] text-sm border-b-[2px] border-solid border-transparent hover:border-[white] duration-200"
-                  href="#"
-                  >ABOUT US</a
-                >
-                <a
-                  class="roboto-mono text-[#D7D9DD] hover:text-white font-medium tracking-[1.4px] text-sm border-b-[2px] border-solid border-transparent hover:border-[white] duration-200"
-                  href="#"
-                  >LOCATION</a
-                >
-                <a
-                  class="roboto-mono text-[#D7D9DD] hover:text-white font-medium tracking-[1.4px] text-sm border-b-[2px] border-solid border-transparent hover:border-[white] duration-200"
-                  href="#"
-                  >CAREER</a
-                >
-                <a
-                  class="roboto-mono text-[#D7D9DD] hover:text-white font-medium tracking-[1.4px] text-sm border-b-[2px] border-solid border-transparent hover:border-[white] duration-200"
-                  href="#"
-                  >PATIENT PORTAL</a
-                >
-                <div>
+            <div class="relative">
+              <div
+                class="absolute hidden max-[500px]:block top-6 left-[30px] max-w-[90px]"
+              >
+                <img
+                  class="w-full"
+                  src="./assetes/img/png/Logo (1).png"
+                  alt="logo"
+                />
+              </div>
+              <div class="flex justify-end p-4 pt-7 pr-9">
+                <button id="close-btn" class="text-white text-5xl">×</button>
+              </div>
+              <div class="px-4 pt-24 pb-4">
+                <div class="flex flex-col gap-[40px] items-center">
                   <a
-                    class="roboto-mono text-[#494336] font-medium text-base xl:text-lg py-2 xl:py-3 px-[30px] xl:px-[38px] bg-gradient-to-r from-[#FFA280] to-[#8FD9D9] rounded-[27px] hover:scale-[1.03] duration-200"
-                    href="#"
-                    >BOOK NOW</a
+                    class="roboto-mono text-[#D7D9DD] hover:text-white font-medium tracking-[1.4px] text-sm links duration-700"
+                    href="./sevices.html"
+                    >SERVICES</a
                   >
+                  <a
+                    class="roboto-mono text-[#D7D9DD] hover:text-white font-medium tracking-[1.4px] text-sm links duration-700"
+                    href="./about.html"
+                    >ABOUT US</a
+                  >
+                  <a
+                    class="roboto-mono text-[#D7D9DD] hover:text-white font-medium tracking-[1.4px] text-sm links duration-700"
+                    href="./location.html"
+                    >LOCATION</a
+                  >
+                  <a
+                    class="roboto-mono text-[#D7D9DD] hover:text-white font-medium tracking-[1.4px] text-sm links duration-700"
+                    href="./carrer.html"
+                    >CAREER</a
+                  >
+                  <a
+                    class="roboto-mono text-[#D7D9DD] hover:text-white font-medium tracking-[1.4px] text-sm links duration-700"
+                    href="#"
+                    >PATIENT PORTAL</a
+                  >
+                  <div>
+                    <a
+                      class="roboto-mono text-[#494336] font-medium text-base xl:text-lg py-2 xl:py-3 px-[30px] xl:px-[38px] bg-gradient rounded-[27px] btn-hover duration-300"
+                      href="#"
+                      >BOOK NOW</a
+                    >
+                  </div>
                 </div>
               </div>
             </div>
@@ -124,6 +143,892 @@
         </div>
       </div>
     </div>
+    <!-- hero-section -->
+    <section>
+      <div
+        class="bg-[#494336] max-[950px]:bg-[url('./assetes/img/png/hero-s-cat-d-img-2.png')] min-[950px]:bg-[url('./assetes/img/png/hero-section-cat-dog-img.png')] bg-no-repeat bg-right-bottom mt-[102px] sm:mt-[88px] lg:mt-[98px]"
+      >
+        <div class="max-w-[1160px] px-[32px] sm:px-[40px] mx-auto">
+          <div
+            class="max-w-[660px] pt-[30px] sm:pt-[50px] md:pt-[80px] lg:pt-[100px] xl:pt-[140px] pb-[280px] min-[950px]:pb-[90px]"
+          >
+            <p
+              class="text-[32px] sm:text-[40px] md:text-[50px] lg:text-[60px] xl:text-[70px] text-[#D7D9DD] leading-[normal]"
+            >
+              Veterinary <br class="hidden max-sm:block" />
+              Services
+            </p>
+            <p
+              class="text-sm sm:text-base md:text-lg lg:text-xl text-[#D7D9DD] leading-[157%] sm:leading-[130%] mt-[30px] sm:mt-5 mb-[51px] sm:mb-12"
+            >
+              At Nebula Vets, we take pride in offering an extensive range of
+              services to meet the diverse needs of our patients. Our commitment
+              to comprehensive care ensures that we can provide the highest
+              quality veterinary services under one roof.
+            </p>
+            <a
+              class="roboto-mono text-[#494336] font-medium text-base xl:text-lg py-2 xl:py-3 px-[30px] xl:px-[38px] bg-gradient !rounded-[27px] duration-300 hover:shadow-xl hover:text-[#D7D9DD]"
+              href="#"
+              >BOOK NOW</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- slider -->
+    <div class="py-20 bg-[#D7D9DD] px-8 sm:px-0">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div
+            class="swiper-slide max-[350px]:!w-[255px] max-[400px]:!w-[296px] max-sm:!w-[400px] sm:!w-[420px] max-[400px]:!h-[296px] max-sm:!h-[400px] sm:h-[420px]"
+          >
+            <div class="w-full h-full">
+              <img
+                class="h-full w-full object-cover"
+                src="./assetes/img/png/slider2-img-1.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div
+            class="swiper-slide max-[350px]:!w-[255px] max-[400px]:!w-[296px] max-sm:!w-[400px] sm:!w-[420px] max-[400px]:!h-[296px max-sm:!h-[400px] ] sm:h-[420px]"
+          >
+            <div class="w-full h-full">
+              <img
+                class="h-full w-full object-cover"
+                src="./assetes/img/png/slider2-img-2.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div
+            class="swiper-slide max-[350px]:!w-[255px] max-[400px]:!w-[296px] max-sm:!w-[400px] sm:!w-[420px] max-[400px]:!h-[296px max-sm:!h-[400px] ] sm:h-[420px]"
+          >
+            <div class="w-full h-full">
+              <img
+                class="h-full w-full object-cover"
+                src="./assetes/img/png/slider2-img-3.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div
+            class="swiper-slide max-[350px]:!w-[255px] max-[400px]:!w-[296px] max-sm:!w-[400px] sm:!w-[420px] max-[400px]:!h-[296px] max-sm:!h-[400px] sm:h-[420px]"
+          >
+            <div class="w-full h-full">
+              <img
+                class="h-full w-full object-cover"
+                src="./assetes/img/png/slider2-img-4.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div
+            class="swiper-slide max-[350px]:!w-[255px] max-[400px]:!w-[296px] max-sm:!w-[400px] sm:!w-[420px] max-[400px]:!h-[296px max-sm:!h-[400px] ] sm:h-[420px]"
+          >
+            <div class="w-full h-full">
+              <img
+                class="h-full w-full object-cover"
+                src="./assetes/img/png/slider2-img-1.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div
+            class="swiper-slide max-[350px]:!w-[255px] max-[400px]:!w-[296px] max-sm:!w-[400px] sm:!w-[420px] max-[400px]:!h-[296px max-sm:!h-[400px] ] sm:h-[420px]"
+          >
+            <div class="w-full h-full">
+              <img
+                class="h-full w-full object-cover"
+                src="./assetes/img/png/slider2-img-2.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="swiper-pagination !bottom-2 sm:!-bottom-10"></div>
+      </div>
+    </div>
+    <!-- tab section -->
+    <section>
+      <div class="bg-[#494336]">
+        <div class="max-w-[1320px] mx-auto px-10 py-[45px] md:py-[80px]">
+          <div
+            class="flex flex-wrap items-center justify-between ga-y-5 gap-10"
+          >
+            <button
+              class="text-[#D7D9DD] opacity-50 text-2xl sm:text-[26px] md:text-[30px] lg:text-[36px] border-solid border-b-[1px] tab-btn"
+              id="btn1"
+              onclick="openTab(1)"
+            >
+              Preventive Care
+            </button>
+            <button
+              class="text-[#D7D9DD] opacity-50 text-2xl sm:text-[26px] md:text-[30px] lg:text-[36px] border-solid border-b-[1px] tab-btn"
+              id="btn2"
+              onclick="openTab(2)"
+            >
+              Sick Patient Care
+            </button>
+            <button
+              class="text-[#D7D9DD] opacity-50 text-2xl sm:text-[26px] md:text-[30px] lg:text-[36px] border-solid border-b-[1px] tab-btn"
+              id="btn3"
+              onclick="openTab(3)"
+            >
+              Surgery
+            </button>
+            <button
+              class="text-[#D7D9DD] opacity-50 text-2xl sm:text-[26px] md:text-[30px] lg:text-[36px] border-solid border-b-[1px] tab-btn"
+              id="btn4"
+              onclick="openTab(4)"
+            >
+              Additional Services
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="tab-content hidden" id="tab1">
+        <div class="flex max-md:flex-wrap max-w-[1440px] mx-auto">
+          <div class="max-w-[620px]">
+            <div
+              class="pt-[120px] max-md:pb-[60px] md:pt-20 px-[0px] lg:pl-[48px] lg:pr-[67px]"
+            >
+              <img
+                class="max-w-[218px] md:max-w-[250px] xl:max-w-[376px] max-md:mb-[-40px]"
+                src="./assetes/img/png/Preventive care big.png"
+                alt=""
+              />
+              <div class="px-[32px] lg:pl-6">
+                <p
+                  class="text-[#494336] text-[32px] md:text-[36px] lg:text-[42px] xl:text-[48px] mt-[3px]"
+                >
+                  Preventive Care
+                </p>
+                <p
+                  class="roboto-mono text-[#494336] text-base sm:text-lg md:text-xl lg:text-2xl leading-[150%] mt-[14px] mb-[33px]"
+                >
+                  Your pet's well-being at the forefront of our practice.
+                </p>
+                <p
+                  class="text-[#494336] text-sm sm:text-base md:text-lg lg:text-xl leading-[157%] md:leading-[130%] md:mb-[48px]"
+                >
+                  At Nebula Vets, we take a proactive approach to your pet's
+                  healthcare, prioritizing their well-being and aiming to
+                  maximize their quality of life. We believe in the importance
+                  of preventive medicine and early detection of potential health
+                  issues. By implementing regular wellness check-ups and
+                  comprehensive screenings, we can identify and address any
+                  problems at their earliest stages.
+                </p>
+                <div class="">
+                  <button
+                    class="roboto-mono text-[#494336] font-medium text-base xl:text-lg py-2 xl:py-3 px-[30px] xl:px-[38px] bg-gradient !rounded-[27px] duration-300 hover:shadow-xl hover:text-[#D7D9DD] hidden md:block"
+                    href="#"
+                  >
+                    BOOK NOW
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="max-w-[820px] bg-[rgba(215,217,221,0.50)] lg:pr-4">
+            <div
+              class="py-[60px] max-md:px-8 md:py-20 sm:pl-8 md:pl-[40px] lg:pl-[80px] xl:pl-[110px] pr-[34px] w-full"
+            >
+              <div class="mb-[59px] md:pb-[70px]">
+                <p
+                  class="roboto-mono text-[#494336] text-base md:text-lg lg:text-2xl xl:text-[28px] ml-1 md:ml-3"
+                >
+                  Animal Health Check
+                </p>
+                <p
+                  class="text-[#494336] text-sm sm:text-base md:text-lg lg:text-xl mt-[20px] mb-[40px] ml-1 md:ml-3 max-md:leading-[22px]"
+                >
+                  Our practice offers the convenience of same or next-day
+                  appointments to ensure your furry companion receives prompt
+                  diagnostic evaluation and treatment. Our dedicated team
+                  prioritizes swift action, allowing us to quickly identify the
+                  issue at hand and provide the necessary care your pet
+                  requires.
+                </p>
+                <a
+                  class="roboto-mono text-[#494336] font-medium text-base xl:text-lg py-2 xl:py-3 px-[30px] xl:px-[38px] bg-gradient !rounded-[27px] duration-300 hover:shadow-xl hover:text-[#D7D9DD]"
+                  href="./animalhealth.html"
+                  >LEARN MORE</a
+                >
+              </div>
+              <div
+                class="pt-[31px] pb-[47px] md:pb-[70px] border-solid border-black border-b-[1px] border-t-[1px]"
+              >
+                <p
+                  class="roboto-mono text-[#494336] text-base md:text-lg lg:text-2xl xl:text-[28px] ml-1 md:ml-3"
+                >
+                  Vaccinations
+                </p>
+                <p
+                  class="text-[#494336] text-sm sm:text-base md:text-lg lg:text-xl mt-[20px] mb-[40px] ml-1 md:ml-3 max-md:leading-[22px]"
+                >
+                  Vaccinations are a key component of your pet’s health and
+                  essential to prevent life-threatening diseases. Nebula vets
+                  offer's all the core and non-core vaccines your pet might
+                  need.
+                </p>
+                <a
+                  class="roboto-mono text-[#494336] font-medium text-base xl:text-lg py-2 xl:py-3 px-[30px] xl:px-[38px] bg-gradient !rounded-[27px] duration-300 hover:shadow-xl hover:text-[#D7D9DD]"
+                  href="./vaccination.html"
+                  >LEARN MORE</a
+                >
+              </div>
+              <div
+                class="pt-[31px] pb-[47px] md:pb-[70px] border-solid border-black border-b-[1px]"
+              >
+                <p
+                  class="roboto-mono text-[#494336] text-base md:text-lg lg:text-2xl xl:text-[28px] ml-1 md:ml-3"
+                >
+                  Dentals
+                </p>
+                <p
+                  class="text-[#494336] text-sm sm:text-base md:text-lg lg:text-xl mt-[20px] mb-[40px] ml-1 md:ml-3 max-md:leading-[22px]"
+                >
+                  Dental disease and smelly breath is common, and regular
+                  cleanings and exams can save your pet a lot of pain and
+                  disease later in life. Our advanced state-of-the-art dental
+                  suite is equipped for dental cleanings (scale and polish),
+                  extractions and any other care your pet may need.
+                </p>
+                <a
+                  class="roboto-mono text-[#494336] font-medium text-base xl:text-lg py-2 xl:py-3 px-[30px] xl:px-[38px] bg-gradient !rounded-[27px] duration-300 hover:shadow-xl hover:text-[#D7D9DD]"
+                  href="./dental.html"
+                  >LEARN MORE</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-content hidden" id="tab2">
+        <div class="flex max-md:flex-wrap max-w-[1440px] mx-auto">
+          <div class="max-w-[620px]">
+            <div
+              class="pt-[120px] max-md:pb-[60px] md:pt-20 px-[0px] lg:pl-[48px] lg:pr-[67px]"
+            >
+              <img
+                class="max-w-[218px] md:max-w-[250px] xl:max-w-[376px] max-md:mb-[-40px]"
+                src="./assetes/img/png/Sick patient icon.png"
+                alt=""
+              />
+              <div class="px-[32px] lg:pl-6">
+                <p
+                  class="text-[#494336] text-[32px] md:text-[36px] lg:text-[42px] xl:text-[48px] mt-[3px]"
+                >
+                  Sick Patient Care
+                </p>
+                <p
+                  class="roboto-mono text-[#494336] text-base sm:text-lg md:text-xl lg:text-2xl leading-[150%] mt-[14px] mb-[33px]"
+                >
+                  Delivering exceptional care for sick patients, combining the
+                  virtues of efficiency and expertise
+                </p>
+                <p
+                  class="text-[#494336] text-sm sm:text-base md:text-lg lg:text-xl leading-[157%] md:leading-[130%] md:mb-[48px]"
+                >
+                  At Nebula Vets, we are fully equipped with advanced diagnostic
+                  tools and a wide range of treatment options to address any
+                  health issue your pet may be facing. Our commitment to
+                  comprehensive care means that we have the expertise and
+                  resources to provide accurate diagnoses and effective
+                  treatments.
+                </p>
+                <button
+                  class="roboto-mono text-[#494336] font-medium text-base xl:text-lg py-2 xl:py-3 px-[30px] xl:px-[38px] bg-gradient !rounded-[27px] duration-300 hover:shadow-xl hover:text-[#D7D9DD] hidden md:block"
+                  href="#"
+                >
+                  BOOK NOW
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="max-w-[820px] bg-[rgba(215,217,221,0.50)] lg:pr-4">
+            <div
+              class="py-[60px] max-md:px-8 md:py-20 sm:pl-8 md:pl-[40px] lg:pl-[80px] xl:pl-[110px] pr-[34px] w-full"
+            >
+              <div class="mb-[59px] md:pb-[70px]">
+                <p
+                  class="roboto-mono text-[#494336] text-base md:text-lg lg:text-2xl xl:text-[28px] ml-1 md:ml-3"
+                >
+                  Urgent & Emergency Care
+                </p>
+                <p
+                  class="text-[#494336] text-sm sm:text-base md:text-lg lg:text-xl mt-[20px] mb-[40px] ml-1 md:ml-3 max-md:leading-[22px]"
+                >
+                  Whether your pet is sick or injured, we’re here to help get
+                  them the help they need. This includes telemedicine veterinary
+                  consults if you are unsure, and overnight care for 24-hour
+                  treatment.
+                </p>
+                <a
+                  class="roboto-mono text-[#494336] font-medium text-base xl:text-lg py-2 xl:py-3 px-[30px] xl:px-[38px] bg-gradient !rounded-[27px] duration-300 hover:shadow-xl hover:text-[#D7D9DD]"
+                  href="./emergencycare.html"
+                  >LEARN MORE</a
+                >
+              </div>
+              <div
+                class="pt-[31px] pb-[47px] md:pb-[70px] border-solid border-black border-b-[1px] border-t-[1px]"
+              >
+                <p
+                  class="roboto-mono text-[#494336] text-base md:text-lg lg:text-2xl xl:text-[28px] ml-1 md:ml-3"
+                >
+                  Telemedicine consults
+                </p>
+                <p
+                  class="text-[#494336] text-sm sm:text-base md:text-lg lg:text-xl mt-[20px] mb-[40px] ml-1 md:ml-3 max-md:leading-[22px]"
+                >
+                  Nebula vets offers a fast telemedicine service, to help your
+                  pet without leaving the home
+                </p>
+                <a
+                  class="roboto-mono text-[#494336] font-medium text-base xl:text-lg py-2 xl:py-3 px-[30px] xl:px-[38px] bg-gradient !rounded-[27px] duration-300 hover:shadow-xl hover:text-[#D7D9DD]"
+                  href="telemedicine.html"
+                  >LEARN MORE</a
+                >
+              </div>
+              <div
+                class="pt-[31px] pb-[47px] md:pb-[70px] border-solid border-black border-b-[1px]"
+              >
+                <p
+                  class="roboto-mono text-[#494336] text-base md:text-lg lg:text-2xl xl:text-[28px] ml-1 md:ml-3"
+                >
+                  Diagnostics
+                </p>
+                <p
+                  class="text-[#494336] text-sm sm:text-base md:text-lg lg:text-xl mt-[20px] mb-[40px] ml-1 md:ml-3 max-md:leading-[22px]"
+                >
+                  Nebula vets has invested in the latest technology, equipped
+                  for all the diagnostic tests your pet needs to stay healthy,
+                  and to treat those that get sick. We’re able to run tests
+                  quickly in-house in situations where a rapid diagnosis is
+                  required and offer artificialintelligence alongside veterinary
+                  experts.
+                </p>
+                <a
+                  class="roboto-mono text-[#494336] font-medium text-base xl:text-lg py-2 xl:py-3 px-[30px] xl:px-[38px] bg-gradient !rounded-[27px] duration-300 hover:shadow-xl hover:text-[#D7D9DD]"
+                  href="./diagnostics.html"
+                  >LEARN MORE</a
+                >
+              </div>
+              <div
+                class="pt-[31px] pb-[47px] md:pb-[70px] border-solid border-black border-b-[1px]"
+              >
+                <p
+                  class="roboto-mono text-[#494336] text-base md:text-lg lg:text-2xl xl:text-[28px] ml-1 md:ml-3"
+                >
+                  Pharmacy
+                </p>
+                <p
+                  class="text-[#494336] text-sm sm:text-base md:text-lg lg:text-xl mt-[20px] mb-[40px] ml-1 md:ml-3 max-md:leading-[22px]"
+                >
+                  Our highly stocked on-site pharmacy inlcudes a variety of
+                  prescription medications and pet health products for your pet.
+                  If a particular medication is unavailable, our compounding
+                  pharmacy can have it delivered to you within 24 hours.
+                </p>
+                <a
+                  class="roboto-mono text-[#494336] font-medium text-base xl:text-lg py-2 xl:py-3 px-[30px] xl:px-[38px] bg-gradient !rounded-[27px] duration-300 hover:shadow-xl hover:text-[#D7D9DD]"
+                  href="pharmacy.html"
+                  >LEARN MORE</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-content hidden" id="tab3">
+        <div class="flex max-md:flex-wrap max-w-[1440px] mx-auto">
+          <div class="max-w-[620px]">
+            <div
+              class="pt-[120px] max-md:pb-[60px] md:pt-20 px-[0px] lg:pl-[48px] lg:pr-[67px]"
+            >
+              <img
+                class="max-w-[218px] md:max-w-[250px] xl:max-w-[300px] max-md:mb-[-40px]"
+                src="./assetes/img/png/Surgery icon (1).png"
+                alt=""
+              />
+              <div class="px-[32px] lg:pl-6">
+                <p
+                  class="text-[#494336] text-[32px] md:text-[36px] lg:text-[42px] xl:text-[48px] mt-[3px]"
+                >
+                  Surgery
+                </p>
+                <p
+                  class="roboto-mono text-[#494336] text-base sm:text-lg md:text-xl lg:text-2xl leading-[150%] mt-[14px] mb-[33px]"
+                >
+                  Highly experienced surgeons -dedicated to delivering
+                  outstanding care for your pet.
+                </p>
+                <p
+                  class="text-[#494336] text-sm sm:text-base md:text-lg lg:text-xl leading-[157%] md:leading-[130%] md:mb-[48px]"
+                >
+                  At Nebula Vets, we are equipped to handle a wide range of
+                  veterinary services, from emergency surgeries to routine
+                  procedures like neuters. Our team of skilled veterinarians is
+                  committed to providing the highest level of care to your pets.
+                </p>
+                <button
+                  class="roboto-mono text-[#494336] font-medium text-base xl:text-lg py-2 xl:py-3 px-[30px] xl:px-[38px] bg-gradient !rounded-[27px] duration-300 hover:shadow-xl hover:text-[#D7D9DD] hidden md:block"
+                  href="#"
+                >
+                  BOOK NOW
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="max-w-[820px] bg-[rgba(215,217,221,0.50)] lg:pr-4">
+            <div
+              class="py-[60px] max-md:px-8 md:pt-20 md:pb-[100px] sm:pl-8 md:pl-[40px] lg:pl-[80px] xl:pl-[110px] pr-[34px] w-full"
+            >
+              <div class="mb-[59px] md:pb-[70px]">
+                <p
+                  class="roboto-mono text-[#494336] text-base md:text-lg lg:text-2xl xl:text-[28px] ml-1 md:ml-3"
+                >
+                  Surgery
+                </p>
+                <p
+                  class="text-[#494336] text-sm sm:text-base md:text-lg lg:text-xl mt-[20px] mb-[40px] ml-1 md:ml-3 max-md:leading-[22px]"
+                >
+                  In our advanced state-of-the-art surgery suite, our
+                  experienced doctors can perform all routine surgeries,
+                  including spays, neuters, basic soft tissue surgery, such as
+                  mass removals, laceration repair, abscesses, and dental
+                  procedures. All estimates are provided within 24 hours of
+                  receiving a request!
+                </p>
+                <a
+                  class="roboto-mono text-[#494336] font-medium text-base xl:text-lg py-2 xl:py-3 px-[30px] xl:px-[38px] bg-gradient !rounded-[27px] duration-300 hover:shadow-xl hover:text-[#D7D9DD]"
+                  href="./surgery.html"
+                  >LEARN MORE</a
+                >
+              </div>
+              <div
+                class="pt-[31px] pb-[47px] md:pb-[70px] border-solid border-black border-b-[1px] border-t-[1px]"
+              >
+                <p
+                  class="roboto-mono text-[#494336] text-base md:text-lg lg:text-2xl xl:text-[28px] ml-1 md:ml-3"
+                >
+                  Spays & Neuters
+                </p>
+                <p
+                  class="text-[#494336] text-sm sm:text-base md:text-lg lg:text-xl mt-[20px] mb-[40px] ml-1 md:ml-3 max-md:leading-[22px]"
+                >
+                  Our team comprises highly trained doctors who excel in routine
+                  surgery and harness the full potential of our state-of-the-art
+                  technology and advanced equipment. With their expertise and
+                  proficiency, they ensure optimal surgical outcomes for your
+                  beloved pets
+                </p>
+                <a
+                  class="roboto-mono text-[#494336] font-medium text-base xl:text-lg py-2 xl:py-3 px-[30px] xl:px-[38px] bg-gradient !rounded-[27px] duration-300 hover:shadow-xl hover:text-[#D7D9DD]"
+                  href="./Spay&Neuter.html"
+                  >LEARN MORE</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-content hidden" id="tab4">
+        <div class="flex max-md:flex-wrap max-w-[1440px] mx-auto">
+          <div class="max-w-[620px]">
+            <div
+              class="pt-[120px] max-md:pb-[60px] md:pt-20 px-[0px] lg:pl-[48px] lg:pr-[67px]"
+            >
+              <img
+                class="max-w-[218px] md:max-w-[250px] xl:max-w-[376px] max-md:mb-[-40px]"
+                src="./assetes/img/png/Additional icon.png"
+                alt=""
+              />
+              <div class="px-[32px] lg:pl-6">
+                <p
+                  class="text-[#494336] text-[32px] md:text-[36px] lg:text-[42px] xl:text-[48px] mt-[3px]"
+                >
+                  Additional Services
+                </p>
+                <p
+                  class="roboto-mono text-[#494336] text-base sm:text-lg md:text-xl lg:text-2xl leading-[150%] mt-[14px] mb-[33px]"
+                >
+                  Additional Services that Go Above and Beyond: Experience
+                  Exceptional Veterinary Care at Nebula Vets
+                </p>
+                <p
+                  class="text-[#494336] text-sm sm:text-base md:text-lg lg:text-xl leading-[157%] md:leading-[130%] md:mb-[48px]"
+                >
+                  Experience comprehensive veterinary care at Nebula Vets. We
+                  offer specialized services in travel document assistance, skin
+                  dermatology, microchipping, and compassionate euthanasia.
+                  Trust our experienced team for exceptional care tailored to
+                  your pet's unique needs.
+                </p>
+                <button
+                  class="roboto-mono text-[#494336] font-medium text-base xl:text-lg py-2 xl:py-3 px-[30px] xl:px-[38px] bg-gradient !rounded-[27px] duration-300 hover:shadow-xl hover:text-[#D7D9DD] hidden md:block"
+                  href="#"
+                >
+                  BOOK NOW
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="max-w-[820px] bg-[rgba(215,217,221,0.50)] lg:pr-4">
+            <div
+              class="py-[60px] max-md:px-8 md:py-20 sm:pl-8 md:pl-[40px] lg:pl-[80px] xl:pl-[110px] pr-[34px] w-full"
+            >
+              <div class="mb-[59px] md:pb-[70px]">
+                <p
+                  class="roboto-mono text-[#494336] text-base md:text-lg lg:text-2xl xl:text-[28px] ml-1 md:ml-3"
+                >
+                  Travel Certificates
+                </p>
+                <p
+                  class="text-[#494336] text-sm sm:text-base md:text-lg lg:text-xl mt-[20px] mb-[40px] ml-1 md:ml-3 max-md:leading-[22px]"
+                >
+                  From domestic or international travel, you will usually
+                  require a health certificate for your pet. We can help with
+                  the necessary paperwork to allow your pet to join you on your
+                  travels –the process is simple and easy.
+                </p>
+                <a
+                  class="roboto-mono text-[#494336] font-medium text-base xl:text-lg py-2 xl:py-3 px-[30px] xl:px-[38px] bg-gradient !rounded-[27px] duration-300 hover:shadow-xl hover:text-[#D7D9DD]"
+                  href="./travel.html"
+                  >LEARN MORE</a
+                >
+              </div>
+              <div
+                class="pt-[31px] pb-[47px] md:pb-[70px] border-solid border-black border-b-[1px] border-t-[1px]"
+              >
+                <p
+                  class="roboto-mono text-[#494336] text-base md:text-lg lg:text-2xl xl:text-[28px] ml-1 md:ml-3"
+                >
+                  Skin & Dermatology
+                </p>
+                <p
+                  class="text-[#494336] text-sm sm:text-base md:text-lg lg:text-xl mt-[20px] mb-[40px] ml-1 md:ml-3 max-md:leading-[22px]"
+                >
+                  If your pet is experiencing uncomfortable symptoms such as
+                  itchy skin, hair loss, or rashes, it may be indicative of
+                  allergies or infections. Our team of highly trained
+                  veterinarians specializes in diagnosing and treating various
+                  skin issues that can cause distress to your beloved companion.
+                  With their expertise and comprehensive understanding of
+                  dermatological conditions, they will diligently assess your
+                  pet's symptoms and develop a tailored treatment plan to
+                  address the underlying cause of their discomfort.
+                </p>
+                <a
+                  class="roboto-mono text-[#494336] font-medium text-base xl:text-lg py-2 xl:py-3 px-[30px] xl:px-[38px] bg-gradient !rounded-[27px] duration-300 hover:shadow-xl hover:text-[#D7D9DD]"
+                  href="./skin&dermatology.html"
+                  >LEARN MORE</a
+                >
+              </div>
+              <div
+                class="pt-[31px] pb-[47px] md:pb-[70px] border-solid border-black border-b-[1px]"
+              >
+                <p
+                  class="roboto-mono text-[#494336] text-base md:text-lg lg:text-2xl xl:text-[28px] ml-1 md:ml-3"
+                >
+                  Microchipping
+                </p>
+                <p
+                  class="text-[#494336] text-sm sm:text-base md:text-lg lg:text-xl mt-[20px] mb-[40px] ml-1 md:ml-3 max-md:leading-[22px]"
+                >
+                  A microchip, resembling a tiny grain of rice in size and
+                  shape, is delicately inserted beneath your pet's skin,
+                  specifically between the shoulder blades. This quick and
+                  completely safe procedure typically takes only a few minutes.
+                </p>
+                <a
+                  class="roboto-mono text-[#494336] font-medium text-base xl:text-lg py-2 xl:py-3 px-[30px] xl:px-[38px] bg-gradient !rounded-[27px] duration-300 hover:shadow-xl hover:text-[#D7D9DD]"
+                  href="microchiping.html"
+                  >LEARN MORE</a
+                >
+              </div>
+              <div
+                class="pt-[31px] pb-[47px] md:pb-[70px] border-solid border-black border-b-[1px]"
+              >
+                <p
+                  class="roboto-mono text-[#494336] text-base md:text-lg lg:text-2xl xl:text-[28px] ml-1 md:ml-3"
+                >
+                  Laser Therapy
+                </p>
+                <p
+                  class="text-[#494336] text-sm sm:text-base md:text-lg lg:text-xl mt-[20px] mb-[40px] ml-1 md:ml-3 max-md:leading-[22px]"
+                >
+                  Our state-of-the-art veterinary hospital utilizes advanced
+                  laser technology to provide non-invasive and drug-free
+                  treatment options that promote healing and enhance the
+                  well-being of your beloved pets.
+                </p>
+                <a
+                  class="roboto-mono text-[#494336] font-medium text-base xl:text-lg py-2 xl:py-3 px-[30px] xl:px-[38px] bg-gradient !rounded-[27px] duration-300 hover:shadow-xl hover:text-[#D7D9DD]"
+                  href="./lasertheropy.html"
+                  >LEARN MORE</a
+                >
+              </div>
+              <div
+                class="pt-[31px] pb-[47px] md:pb-[70px] border-solid border-black border-b-[1px]"
+              >
+                <p
+                  class="roboto-mono text-[#494336] text-base md:text-lg lg:text-2xl xl:text-[28px] ml-1 md:ml-3"
+                >
+                  Hospice & Euthanasia
+                </p>
+                <p
+                  class="text-[#494336] text-sm sm:text-base md:text-lg lg:text-xl mt-[20px] mb-[40px] ml-1 md:ml-3 max-md:leading-[22px]"
+                >
+                  The decision to say goodbye to your pet is the most difficult
+                  decision you’ll have to make. Our team at nebula vets is here
+                  to guide you through the process with compassion and can
+                  perform end-of-life services at the time of your choosing..
+                </p>
+                <a
+                  class="roboto-mono text-[#494336] font-medium text-base xl:text-lg py-2 xl:py-3 px-[30px] xl:px-[38px] bg-gradient !rounded-[27px] duration-300 hover:shadow-xl hover:text-[#D7D9DD]"
+                  href="./hospice&euthanasia.html"
+                  >LEARN MORE</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- forward to seeing -->
+    <section class="md:hidden">
+      <div
+        class="bg-[#494336] relative border-b-[2px] border-solid border-[#D8DADC] max-lg:pb-[80px]"
+      >
+        <div
+          class="absolute right-0 min-md:right-[37px] max-w-[500px] bottom-0"
+        >
+          <img
+            class="w-full"
+            src="./assetes/img/png/we-look-forward-bg-img.png"
+            alt="bg-img"
+          />
+        </div>
+        <div
+          class="max-w-[1160px] px-[32px] sm:px-[40px] py-[60px] sm:py-[80px] mx-auto"
+        >
+          <div class="max-w-[568px]">
+            <p
+              class="text-2xl sm:text-[30px] md:text-[36px] lg:text-[42px] xl:text-[48px] text-[#D7D9DD] mb-[20px] md:mb-[30px]"
+            >
+              We look forward to seeing you and your pet soon!
+            </p>
+            <p
+              class="text-sm sm:text-base md:text-lg lg:text-xl text-[#D7D9DD] !leading-[26px] mb-[38px] sm:mb-10"
+            >
+              Contact Nebula Vets today to schedule a consultation. Let us
+              provide your furry companion with the highest quality care and
+              support, ensuring a healthier and happier life for them.
+            </p>
+            <a
+              class="roboto-mono text-[#494336] font-medium text-base xl:text-lg py-2 xl:py-3 px-[30px] xl:px-[38px] bg-gradient !rounded-[27px] duration-300 hover:shadow-xl hover:text-[#D7D9DD]"
+              href="#"
+              >BOOK NOW</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer>
+      <div class="bg-[#494336]">
+        <div class="max-w-[1364px] px-8 max-sm:pb-[111px] py-[60px] mx-auto">
+          <div class="flex justify-between gap-10 max-[950px]:flex-wrap">
+            <div class="max-w-[309px]">
+              <label
+                class="text-[#D7D9DD] text-base sm:text-lg md:text-xl lg:text-2xl mb-6 roboto-mono"
+                for="email"
+                >Stay in touch:</label
+              >
+              <input
+                class="text-lg text-[#D7D9DD] py-[6px] px-[14px] border-[1px] border-solid border-[#D7D9DD] mt-6 w-full"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email"
+              />
+              <div class="flex gap-5 mt-[15px] md:mt-[22px]">
+                <a
+                  class="hover:scale-[1.06] duration-200"
+                  target="_blank"
+                  href="http://facebook.com/"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="50"
+                    height="51"
+                    viewBox="0 0 50 51"
+                    fill="none"
+                  >
+                    <path
+                      d="M24.6478 0.622559C11.035 0.622559 0 11.697 0 25.3584C0 39.0198 11.035 50.0943 24.6478 50.0943C38.2605 50.0943 49.2955 39.0198 49.2955 25.3584C49.2955 11.697 38.2605 0.622559 24.6478 0.622559ZM30.4862 17.7161H26.7813C26.3423 17.7161 25.8545 18.2958 25.8545 19.0662V21.7511H30.4888L29.7878 25.58H25.8545V37.0744H21.4821V25.58H17.5153V21.7511H21.4821V19.4991C21.4821 16.268 23.7158 13.6424 26.7813 13.6424H30.4862V17.7161Z"
+                      fill="url(#paint0_linear_1720_1398)"
+                    />
+                    <defs>
+                      <linearGradient
+                        id="paint0_linear_1720_1398"
+                        x1="0"
+                        y1="0.622559"
+                        x2="49.2955"
+                        y2="0.622558"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#FFA280" />
+                        <stop offset="1" stop-color="#8FD9D9" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </a>
+                <a
+                  class="hover:scale-[1.06] duration-200"
+                  target="_blank"
+                  href="https://in.linkedin.com/"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="50"
+                    height="51"
+                    viewBox="0 0 50 51"
+                    fill="none"
+                  >
+                    <path
+                      d="M25.3044 0.622559C11.6916 0.622559 0.656616 11.697 0.656616 25.3584C0.656616 39.0198 11.6916 50.0943 25.3044 50.0943C38.9171 50.0943 49.9521 39.0198 49.9521 25.3584C49.9521 11.697 38.9171 0.622559 25.3044 0.622559ZM19.2708 35.6109H14.2796V19.4914H19.2708V35.6109ZM16.7444 17.5125C15.168 17.5125 14.1487 16.3917 14.1487 15.0054C14.1487 13.5908 15.1988 12.5035 16.8086 12.5035C18.4184 12.5035 19.4043 13.5908 19.4351 15.0054C19.4351 16.3917 18.4184 17.5125 16.7444 17.5125ZM37.4999 35.6109H32.5087V26.6777C32.5087 24.5983 31.7847 23.1863 29.9797 23.1863C28.601 23.1863 27.782 24.1422 27.42 25.0621C27.2865 25.3893 27.2531 25.8531 27.2531 26.3143V35.6083H22.2594V24.6318C22.2594 22.6194 22.1952 20.9369 22.1284 19.4888H26.4649L26.6934 21.7279H26.7935C27.4508 20.6766 29.0606 19.1255 31.7539 19.1255C35.0377 19.1255 37.4999 21.3337 37.4999 26.0799V35.6109Z"
+                      fill="url(#paint0_linear_1720_1397)"
+                    />
+                    <defs>
+                      <linearGradient
+                        id="paint0_linear_1720_1397"
+                        x1="0.656616"
+                        y1="0.622559"
+                        x2="49.9521"
+                        y2="0.622558"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#FFA280" />
+                        <stop offset="1" stop-color="#8FD9D9" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </a>
+                <a
+                  class="hover:scale-[1.06] duration-200"
+                  target="_blank"
+                  href="https://www.instagram.com/"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="50"
+                    height="51"
+                    viewBox="0 0 50 51"
+                    fill="none"
+                  >
+                    <path
+                      d="M32.6635 25.4341C32.6635 27.4842 31.852 29.4503 30.4076 30.9C28.9631 32.3496 27.0039 33.164 24.9611 33.164C22.9183 33.164 20.9592 32.3496 19.5147 30.9C18.0702 29.4503 17.2587 27.4842 17.2587 25.4341C17.2587 24.9935 17.3049 24.5632 17.3845 24.1458H14.6912V34.4446C14.6912 35.1609 15.2689 35.7407 15.9827 35.7407H33.9421C34.2842 35.74 34.612 35.6032 34.8537 35.3602C35.0953 35.1172 35.231 34.7879 35.231 34.4446V24.1458H32.5377C32.6173 24.5632 32.6635 24.9935 32.6635 25.4341ZM24.9611 30.5874C25.6356 30.5872 26.3035 30.4537 26.9266 30.1945C27.5497 29.9353 28.1158 29.5555 28.5926 29.0767C29.0694 28.598 29.4476 28.0296 29.7056 27.4042C29.9635 26.7787 30.0962 26.1084 30.0961 25.4315C30.0959 24.7546 29.9629 24.0844 29.7046 23.459C29.4463 22.8337 29.0679 22.2656 28.5908 21.787C28.1137 21.3085 27.5474 20.929 26.9242 20.6701C26.301 20.4112 25.633 20.278 24.9585 20.2782C23.5963 20.2786 22.29 20.822 21.3271 21.7889C20.3641 22.7558 19.8233 24.067 19.8236 25.4341C19.8239 26.8012 20.3654 28.1121 21.3289 29.0786C22.2923 30.045 23.5989 30.5877 24.9611 30.5874ZM31.1231 20.0231H34.2015C34.406 20.0231 34.6022 19.9418 34.747 19.7969C34.8919 19.652 34.9736 19.4554 34.9743 19.2501V16.1607C34.9743 15.955 34.8928 15.7578 34.7479 15.6123C34.603 15.4669 34.4064 15.3852 34.2015 15.3852H31.1231C30.9181 15.3852 30.7215 15.4669 30.5766 15.6123C30.4317 15.7578 30.3502 15.955 30.3502 16.1607V19.2501C30.3528 19.6753 30.6994 20.0231 31.1231 20.0231ZM24.9611 0.698242C18.4241 0.698242 12.1549 3.30433 7.53252 7.9432C2.91016 12.5821 0.313354 18.8737 0.313354 25.4341C0.313354 31.9944 2.91016 38.2861 7.53252 42.925C12.1549 47.5639 18.4241 50.1699 24.9611 50.1699C28.1979 50.1699 31.403 49.5301 34.3934 48.287C37.3838 47.0439 40.101 45.2219 42.3897 42.925C44.6785 40.628 46.494 37.9012 47.7327 34.9001C48.9713 31.899 49.6089 28.6824 49.6089 25.4341C49.6089 22.1857 48.9713 18.9692 47.7327 15.9681C46.494 12.967 44.6785 10.2401 42.3897 7.9432C40.101 5.64627 37.3838 3.82424 34.3934 2.58115C31.403 1.33805 28.1979 0.698242 24.9611 0.698242ZM37.7985 35.4547C37.7985 37.029 36.5148 38.3173 34.946 38.3173H14.9762C13.4075 38.3173 12.1237 37.029 12.1237 35.4547V15.4135C12.1237 13.8392 13.4075 12.5508 14.9762 12.5508H34.946C36.5148 12.5508 37.7985 13.8392 37.7985 15.4135V35.4547Z"
+                      fill="url(#paint0_linear_1720_1396)"
+                    />
+                    <defs>
+                      <linearGradient
+                        id="paint0_linear_1720_1396"
+                        x1="0.313354"
+                        y1="0.698242"
+                        x2="49.6089"
+                        y2="0.698242"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#FFA280" />
+                        <stop offset="1" stop-color="#8FD9D9" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div
+              class="flex max-sm:flex-wrap gap-y-[30px] max-sm:gap-x-[150px] max-md:gap-x-[100px] gap-x-[55px]"
+            >
+              <div class="flex flex-col gap-[10px] md:gap-[30px]">
+                <p
+                  class="roboto-mono text-[#D7D9DD] text-base sm:text-lg md:text-xl lg:text-2xl"
+                >
+                  Services
+                </p>
+                <div class="flex flex-col gap-[7px]">
+                  <a
+                    class="text-[#D7D9DD] text-sm sm:text-base text-underline duration-700 links"
+                    href="./sevices.html"
+                    >Preventive Care</a
+                  >
+                  <a
+                    class="text-[#D7D9DD] text-sm sm:text-base text-underline duration-700 links"
+                    href="./sevices.html"
+                    >Sick Patient Care</a
+                  >
+                  <a
+                    class="text-[#D7D9DD] text-sm sm:text-base text-underline duration-700 links"
+                    href="./sevices.html"
+                    >Surgery</a
+                  >
+                  <a
+                    class="text-[#D7D9DD] text-sm sm:text-base text-underline duration-700 links"
+                    href="./sevices.html"
+                    >Additional Services</a
+                  >
+                </div>
+              </div>
+              <div class="flex flex-col gap-[10px] md:gap-[30px]">
+                <p
+                  class="roboto-mono text-[#D7D9DD] text-base sm:text-lg md:text-xl lg:text-2xl"
+                >
+                  Company
+                </p>
+                <div class="flex flex-col gap-[7px]">
+                  <a
+                    class="text-[#D7D9DD] text-sm sm:text-base text-underline duration-700 links"
+                    href="./about.html"
+                    >About us</a
+                  >
+                  <a
+                    class="text-[#D7D9DD] text-sm sm:text-base text-underline duration-700 links"
+                    href="./carrer.html"
+                    >Carreers</a
+                  >
+                </div>
+              </div>
+              <div
+                class="flex flex-col gap-[10px] md:gap-[30px] xl:ml-[57px] xl:mr-[145px]"
+              >
+                <p
+                  class="roboto-mono text-[#D7D9DD] text-base sm:text-lg md:text-xl lg:text-2xl"
+                >
+                  Contact Us
+                </p>
+                <div class="flex flex-col gap-[7px]">
+                  <a
+                    class="text-[#D7D9DD] text-sm sm:text-base text-underline duration-700 links"
+                    href="tel:(212) 123-4567"
+                    >Phone: (212) 123-4567</a
+                  >
+                  <a
+                    class="text-[#D7D9DD] text-sm sm:text-base text-underline duration-700 links"
+                    href="mailto:hello@nebulavets.com"
+                    >hello@nebulavets.com</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Swiper JS -->
+    <!-- Initialize Swiper -->
     <script>
       const openBtn = document.getElementById("open-btn");
       const closeBtn = document.getElementById("close-btn");
@@ -147,6 +1052,83 @@
         sidebar.classList.remove("translate-x-0");
         sidebar.classList.add("translate-x-full");
         overlay.classList.add("hidden");
+      });
+    </script>
+    <script>
+      function openTab(tabIndex) {
+        // Hide all tab contents
+        var tabs = document.querySelectorAll(".tab-content");
+        tabs.forEach(function (tab) {
+          tab.classList.add("hidden");
+        });
+
+        // Show the selected tab
+        document.getElementById("tab" + tabIndex).classList.remove("hidden");
+
+        // Change button style (color and opacity)
+        var buttons = document.querySelectorAll(".tab-btn");
+        buttons.forEach(function (button) {
+          button.classList.remove(
+            "text-[#D7D9DD]",
+            "opacity-100",
+            "border-b-[1px]"
+          );
+          button.classList.add("opacity-70", "text-[#D7D9DD]");
+        });
+
+        var activeButton = document.getElementById("btn" + tabIndex);
+        activeButton.classList.add(
+          "opacity-100",
+          "text-[#D7D9DD]",
+          "border-b-[1px]"
+        );
+      }
+      // Default to the first tab open
+      openTab(1);
+    </script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 2,
+        spaceBetween: 20,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        breakpoints: {
+          300: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            loop: true,
+
+            autoplay: {
+              delay: 2500,
+              disableOnInteraction: false,
+            },
+          },
+          540: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+            loop: true,
+
+            autoplay: {
+              delay: 2500,
+              disableOnInteraction: false,
+            },
+          },
+          768: {
+            slidesPerView: 2.2,
+          },
+          968: {
+            slidesPerView: 2.5,
+          },
+          1124: {
+            slidesPerView: 3.5,
+          },
+          1250: { slidesPerView: 3.8 },
+        },
       });
     </script>
   </body>

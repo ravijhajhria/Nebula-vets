@@ -21,7 +21,24 @@ body {
 .swiper-pagination-bullet-active {
   background-color: #494336 !important;
 }
-.swiper-slide {
-  margin-right: 20px !important;
-  max-width: 300px !important;
+.text-linear-gradient {
+  background: linear-gradient(180deg, #ffa280 0%, #8fd9cb 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.links:hover {
+  background: linear-gradient(180deg, #ffa280 0%, #8fd9cb 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  scale: 1.02;
+}
+.bg-gradient {
+  background: var(
+    --Gradient-02,
+    linear-gradient(90deg, #ffa280 0%, #8fd9d9 100%)
+  ) !important;
+  z-index: 2 !important;
+  position: relative;
 }
