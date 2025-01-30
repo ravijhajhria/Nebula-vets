@@ -78,3 +78,8 @@ body {
   top: -100%;
   transition: top 0.3s;
 }
+@media (max-width: 1280px) {
+  .btn--2::after {
+    line-height: 40px;
+  }
+}
