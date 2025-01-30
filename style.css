@@ -42,3 +42,6 @@ body {
   z-index: 2 !important;
   position: relative;
 }
+.rotate-45 {
+  transform: rotate(90deg);
+}
