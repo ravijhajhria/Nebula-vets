@@ -83,3 +83,7 @@ body {
     line-height: 40px;
   }
 }
+
+section {
+  overflow-x: hidden;
+}
