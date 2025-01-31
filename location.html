@@ -15,6 +15,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- navbar -->
@@ -45,7 +46,7 @@
               >ABOUT US</a
             >
             <a
-              class="roboto-mono text-[#D7D9DD] hover:text-white font-medium tracking-[1.4px] text-sm links duration-700"
+              class="roboto-mono text-linear-gradient hover:text-white font-medium tracking-[1.4px] text-sm links duration-700"
               href="./location.html"
               >LOCATION</a
             >
@@ -110,7 +111,7 @@
                     >ABOUT US</a
                   >
                   <a
-                    class="roboto-mono text-[#D7D9DD] hover:text-white font-medium tracking-[1.4px] text-sm links duration-700"
+                    class="roboto-mono text-linear-gradient hover:text-white font-medium tracking-[1.4px] text-sm links duration-700"
                     href="./location.html"
                     >LOCATION</a
                   >
@@ -141,7 +142,11 @@
     </div>
     <!-- hero-section -->
     <section>
-      <div class="bg-[#494336] mt-[102px] sm:mt-[88px] lg:mt-[98px] relative">
+      <div
+        data-aos="fade-down"
+        data-aos-duration="1000"
+        class="bg-[#494336] mt-[102px] sm:mt-[88px] lg:mt-[98px] relative"
+      >
         <div
           class="absolute right-0 max-sm:top-3 sm:mt-5 md:top-10 max-sm:max-w-[220px] max-md:max-w-[272px] max-lg:max-w-[400px] max-xl:max-w-[500px] xl:max-w-[600px]"
         >
@@ -181,7 +186,7 @@
     </section>
     <!--  -->
     <section>
-      <div class="bg-[rgba(215,217,221,0.50)] relative">
+      <div class="bg-[rgba(215,217,221,0.50)] relative overflow-hidden">
         <div class="absolute bottom-0 w-full">
           <img src="./assetes/img/png/location-bg.png" alt="bg-img" />
         </div>
@@ -190,6 +195,8 @@
         >
           <div class="flex items-center max-md:flex-wrap-reverse">
             <div
+              data-aos="fade-right"
+              data-aos-duration="1000"
               class="max-md:px-8 w-full md:w-[39.17%] flex flex-col gap-[38.5px] sm:gap-8 xl:ml-[100px] max-md:mt-15"
             >
               <p
@@ -226,7 +233,11 @@
                 hello@nebulavets.com
               </p>
             </div>
-            <div class="w-full md:w-[60.83%]">
+            <div
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              class="w-full md:w-[60.83%]"
+            >
               <div
                 class="mapouter relative text-right w-full h-[318px] sm:h-[500px] md:h-[570px]"
               >
@@ -267,9 +278,13 @@
         <div
           class="max-w-[1160px] px-[32px] sm:px-[40px] pt-[60px] pb-[200px] sm:py-[112px] mx-auto"
         >
-          <div class="max-w-[568px]">
+          <div
+            class="max-w-[568px]"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+          >
             <p
-              class="text-2xl sm:text-[30px] md:text-[36px] lg:text-[42px] xl:text-[48px] text-[#D7D9DD] mb-[40px] sm:mb-[60px] md:mb-[80px]"
+              class="text-2xl sm:text-[30px] md:text-[36px] lg:text-[42px] xl:text-[48px] text-[#D7D9DD] mb-[40px] sm:mb-[60px] md:mb-[60px]"
             >
               Come visit us!
             </p>
@@ -495,6 +510,10 @@
         sidebar.classList.add("translate-x-full");
         overlay.classList.add("hidden");
       });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>

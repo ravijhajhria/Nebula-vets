@@ -15,6 +15,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- navbar -->
@@ -35,7 +36,7 @@
             class="flex gap-[30px] xl:gap-[66px] items-center max-[950px]:hidden"
           >
             <a
-              class="roboto-mono text-[#D7D9DD] hover:text-white font-medium tracking-[1.4px] text-sm links duration-700"
+              class="roboto-mono text-linear-gradient hover:text-white font-medium tracking-[1.4px] text-sm links duration-700"
               href="./sevices.html"
               >SERVICES</a
             >
@@ -100,7 +101,7 @@
               <div class="px-4 pt-24 pb-4">
                 <div class="flex flex-col gap-[40px] items-center">
                   <a
-                    class="roboto-mono text-[#D7D9DD] hover:text-white font-medium tracking-[1.4px] text-sm links duration-700"
+                    class="roboto-mono text-linear-gradient hover:text-white font-medium tracking-[1.4px] text-sm links duration-700"
                     href="./sevices.html"
                     >SERVICES</a
                   >
@@ -141,7 +142,11 @@
     </div>
     <!-- hero-section -->
     <section>
-      <div class="bg-[#494336] mt-[102px] sm:mt-[88px] lg:mt-[98px] relative">
+      <div
+        class="bg-[#494336] mt-[102px] sm:mt-[88px] lg:mt-[98px] relative"
+        data-aos="fade-down"
+        data-aos-duration="1000"
+      >
         <div
           class="absolute right-0 max-md:top-5 md:bottom-7 max-sm:max-w-[253px] max-md:max-w-[300px] max-xl:max-w-[400px]"
         >
@@ -182,7 +187,7 @@
     </section>
     <!-- health-check-exam -->
     <section>
-      <div class="bg-[rgba(215,217,221,0.50)] relative">
+      <div class="bg-[rgba(215,217,221,0.50)] relative overflow-hidden">
         <div class="absolute bottom-0 w-full">
           <img
             class="mx-auto"
@@ -193,7 +198,7 @@
         <div
           class="max-w-[1160px] mx-auto px-[32px] sm:px-[40px] pt-[60px] sm:pt-20 pb-[130px] relative z-[1] flex flex-col gap-14 sm:gap-16"
         >
-          <div>
+          <div data-aos="fade-right" data-aos-duration="1000">
             <p
               class="text-[#494336] text-2xl sm:text-[26px] md:text-[30px] lg:text-[36px] leading-[normal]"
             >
@@ -209,7 +214,7 @@
               ensure your pet's oral health remains in top condition.
             </p>
           </div>
-          <div>
+          <div data-aos="fade-left" data-aos-duration="1000">
             <p
               class="text-[#494336] text-2xl sm:text-[26px] md:text-[30px] lg:text-[36px] leading-[normal]"
             >
@@ -226,7 +231,7 @@
               treatment options.
             </p>
           </div>
-          <div>
+          <div data-aos="fade-right" data-aos-duration="1000">
             <p
               class="text-[#494336] text-2xl sm:text-[26px] md:text-[30px] lg:text-[36px] leading-[normal]"
             >
@@ -247,7 +252,7 @@
       </div>
     </section>
     <!-- health check matter -->
-    <section>
+    <section class="overflow-hidden">
       <div
         class="max-w-[1160px] mx-auto px-[32px] sm:px-[40px] py-15 sm:py-[70px]"
       >
@@ -259,6 +264,8 @@
           </p>
           <div>
             <button
+              data-aos="fade-right"
+              data-aos-duration="1000"
               class="toggle-button w-full items-center border-b-[2px] border-solid border-c-liner pb-[32px] group"
             >
               <div class="flex justify-between w-full items-center gap-5">
@@ -330,6 +337,8 @@
               </p>
             </button>
             <button
+              data-aos="fade-left"
+              data-aos-duration="1000"
               class="toggle-button w-full items-center border-b-[2px] border-solid border-c-liner py-[32px] group"
             >
               <div class="flex justify-between w-full items-center gap-5">
@@ -400,6 +409,8 @@
               </p>
             </button>
             <button
+              data-aos="fade-right"
+              data-aos-duration="1000"
               class="toggle-button w-full items-center border-b-[2px] border-solid border-c-liner py-[32px] group"
             >
               <div class="flex justify-between w-full items-center gap-5">
@@ -470,6 +481,8 @@
               </p>
             </button>
             <button
+              data-aos="fade-left"
+              data-aos-duration="1000"
               class="toggle-button w-full items-center border-b-[2px] border-solid border-c-liner py-[32px] group"
             >
               <div class="flex justify-between w-full items-center gap-5">
@@ -540,6 +553,8 @@
               </p>
             </button>
             <button
+              data-aos="fade-right"
+              data-aos-duration="1000"
               class="toggle-button w-full items-center border-b-[2px] border-solid border-c-liner py-[32px] group"
             >
               <div class="flex justify-between w-full items-center gap-5">
@@ -610,6 +625,8 @@
               </p>
             </button>
             <button
+              data-aos="fade-left"
+              data-aos-duration="1000"
               class="toggle-button w-full items-center border-b-[2px] border-solid border-c-liner py-[32px] group"
             >
               <div class="flex justify-between w-full items-center gap-5">
@@ -681,6 +698,8 @@
               </p>
             </button>
             <button
+              data-aos="fade-right"
+              data-aos-duration="1000"
               class="toggle-button w-full items-center border-b-[2px] border-solid border-c-liner py-[32px] group"
             >
               <div class="flex justify-between w-full items-center gap-5">
@@ -756,15 +775,19 @@
       </div>
     </section>
     <!-- dental care at nebula vets -->
-    <section class="bg-[rgba(215,217,221,0.50)]">
+    <section class="bg-[rgba(215,217,221,0.50)] overflow-hidden">
       <div class="max-w-[1160px] mx-auto px-[32px] sm:px-[40px] py-15 sm:py-20">
         <div>
           <p
-            class="text-[#494336] text-2xl sm:text-[26px] md:text-[30px] lg:text-[36px] mb-5 leading-[normal]"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            class="text-[#494336] text-2xl sm:text-[26px] md:text-[30px] lg:text-[36px] mb-[28px] leading-[normal]"
           >
             Experience Exceptional Dental Care at Nebula Vets:
           </p>
           <p
+            data-aos="fade-left"
+            data-aos-duration="1000"
             class="text-sm sm:text-base md:text-lg text-[#494336] text-start leading-[22px] sm:leading-[24px]"
           >
             At Nebula Vets, we are committed to providing exceptional dental
@@ -793,16 +816,20 @@
         <div
           class="max-w-[1160px] px-[32px] sm:px-[40px] py-[60px] sm:py-[70px] mx-auto"
         >
-          <div class="max-w-[867px]">
+          <div
+            class="max-w-[867px]"
+            data-aos="zoom-out"
+            data-aos-duration="1000"
+          >
             <p
-              class="text-2xl sm:text-[30px] md:text-[36px] text-[#D7D9DD] mb-[32px] md:mb-5"
+              class="text-2xl sm:text-[30px] md:text-[36px] text-[#D7D9DD] mb-[32px] md:mb-5 leading-[normal]"
             >
               We look forward to <br class="min-[400px]:hidden" />
               seeing you and your <br class="min-[400px]:hidden" />
               pet soon!
             </p>
             <p
-              class="text-sm sm:text-base md:text-lg lg:text-xl text-[#D7D9DD] leading-[22px] md:leading-[26px] mb-[38px] sm:mb-10"
+              class="text-sm sm:text-base md:text-lg lg:text-xl text-[#D7D9DD] leading-[22px] md:leading-[26px] mb-[30px] sm:mb-10"
             >
               Schedule a dental appointment at Nebula Vets today, and let us
               illuminate your pet's smile for a lifetime of dental wellness and
@@ -1032,7 +1059,10 @@
         overlay.classList.add("hidden");
       });
     </script>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script>
       document.querySelectorAll(".toggle-button").forEach((button) => {
         button.addEventListener("click", () => {

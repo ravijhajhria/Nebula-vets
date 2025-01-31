@@ -15,6 +15,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- navbar -->
@@ -35,7 +36,7 @@
             class="flex gap-[30px] xl:gap-[66px] items-center max-[950px]:hidden"
           >
             <a
-              class="roboto-mono text-[#D7D9DD] hover:text-white font-medium tracking-[1.4px] text-sm links duration-700"
+              class="roboto-mono text-linear-gradient hover:text-white font-medium tracking-[1.4px] text-sm links duration-700"
               href="./sevices.html"
               >SERVICES</a
             >
@@ -100,7 +101,7 @@
               <div class="px-4 pt-24 pb-4">
                 <div class="flex flex-col gap-[40px] items-center">
                   <a
-                    class="roboto-mono text-[#D7D9DD] hover:text-white font-medium tracking-[1.4px] text-sm links duration-700"
+                    class="roboto-mono text-linear-gradient hover:text-white font-medium tracking-[1.4px] text-sm links duration-700"
                     href="./sevices.html"
                     >SERVICES</a
                   >
@@ -141,7 +142,11 @@
     </div>
     <!-- hero-section -->
     <section>
-      <div class="bg-[#494336] mt-[102px] sm:mt-[88px] lg:mt-[98px] relative">
+      <div
+        class="bg-[#494336] mt-[102px] sm:mt-[88px] lg:mt-[98px] relative"
+        data-aos="fade-down"
+        data-aos-duration="1000"
+      >
         <div
           class="absolute right-0 top-5 md:top-5 max-sm:max-w-[211px] max-md:max-w-[300px] max-xl:max-w-[400px]"
         >
@@ -230,7 +235,7 @@
       </div>
     </section>
     <!-- health check matter -->
-    <section>
+    <section class="overflow-hidden">
       <div class="max-w-[1160px] mx-auto px-[32px] sm:px-[40px] py-15 sm:py-20">
         <div>
           <p
@@ -241,6 +246,8 @@
           <div class="">
             <button
               class="toggle-button w-full items-center border-b-[2px] border-solid border-c-liner pb-[32px] group"
+              data-aos="fade-right"
+              data-aos-duration="1000"
             >
               <div class="flex justify-between w-full items-center gap-5">
                 <p
@@ -311,6 +318,8 @@
             </button>
             <button
               class="toggle-button w-full items-center border-b-[2px] border-solid border-c-liner py-[32px] group"
+              data-aos="fade-left"
+              data-aos-duration="1000"
             >
               <div class="flex justify-between w-full items-center gap-5">
                 <p
@@ -383,6 +392,8 @@
             </button>
             <button
               class="toggle-button w-full items-center border-b-[2px] border-solid border-c-liner py-[32px] group"
+              data-aos="fade-right"
+              data-aos-duration="1000"
             >
               <div class="flex justify-between w-full items-center gap-5">
                 <p
@@ -454,6 +465,8 @@
             </button>
             <button
               class="toggle-button w-full items-center border-b-[2px] border-solid border-c-liner py-[32px] group"
+              data-aos="fade-left"
+              data-aos-duration="1000"
             >
               <div class="flex justify-between w-full items-center gap-5">
                 <p
@@ -526,6 +539,8 @@
             </button>
             <button
               class="toggle-button w-full items-center border-b-[2px] border-solid border-c-liner py-[32px] group"
+              data-aos="fade-right"
+              data-aos-duration="1000"
             >
               <div class="flex justify-between w-full items-center gap-5">
                 <p
@@ -597,6 +612,8 @@
             </button>
             <button
               class="toggle-button w-full items-center border-b-[2px] border-solid border-c-liner py-[32px] group"
+              data-aos="fade-left"
+              data-aos-duration="1000"
             >
               <div class="flex justify-between w-full items-center gap-5">
                 <p
@@ -668,6 +685,8 @@
             </button>
             <button
               class="toggle-button w-full items-center border-b-[2px] border-solid border-c-liner py-[32px] group"
+              data-aos="fade-right"
+              data-aos-duration="1000"
             >
               <div class="flex justify-between w-full items-center gap-5">
                 <p
@@ -742,16 +761,20 @@
       </div>
     </section>
     <!-- pet soon -->
-    <section class="bg-[rgba(215,217,221,0.50)]">
+    <section class="bg-[rgba(215,217,221,0.50)] overflow-hidden">
       <div class="max-w-[1160px] mx-auto px-[32px] sm:px-[40px] py-15 sm:py-20">
         <div>
           <p
             class="text-[#494336] text-2xl sm:text-[26px] md:text-[30px] lg:text-[36px] leading-[normal] mb-[28px]"
+            data-aos="fade-right"
+            data-aos-duration="500"
           >
             Experience Exceptional Animal Health Checks at Nebula Vets:
           </p>
           <p
             class="text-sm sm:text-base md:text-lg lg:text-xl text-[#494336] text-start leading-[22px] sm:leading-[26px]"
+            data-aos="fade-left"
+            data-aos-duration="1000"
           >
             At Nebula Vets, we are committed to providing exceptional animal
             health checks that go beyond the basics. Our thorough evaluations,
@@ -778,6 +801,8 @@
         </div>
         <div
           class="max-w-[1160px] px-[32px] sm:px-[40px] py-[60px] sm:py-[80px] mx-auto"
+          data-aos="zoom-out"
+          data-aos-duration="1000"
         >
           <div class="max-w-[867px]">
             <p
@@ -1036,6 +1061,10 @@
           }
         });
       });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>

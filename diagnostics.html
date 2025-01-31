@@ -15,6 +15,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- navbar -->
@@ -35,7 +36,7 @@
             class="flex gap-[30px] xl:gap-[66px] items-center max-[950px]:hidden"
           >
             <a
-              class="roboto-mono text-[#D7D9DD] hover:text-white font-medium tracking-[1.4px] text-sm links duration-700"
+              class="roboto-mono text-linear-gradient hover:text-white font-medium tracking-[1.4px] text-sm links duration-700"
               href="./sevices.html"
               >SERVICES</a
             >
@@ -100,7 +101,7 @@
               <div class="px-4 pt-24 pb-4">
                 <div class="flex flex-col gap-[40px] items-center">
                   <a
-                    class="roboto-mono text-[#D7D9DD] hover:text-white font-medium tracking-[1.4px] text-sm links duration-700"
+                    class="roboto-mono text-linear-gradient hover:text-white font-medium tracking-[1.4px] text-sm links duration-700"
                     href="./sevices.html"
                     >SERVICES</a
                   >
@@ -141,7 +142,11 @@
     </div>
     <!-- hero-section -->
     <section>
-      <div class="bg-[#494336] mt-[102px] sm:mt-[88px] lg:mt-[98px] relative">
+      <div
+        class="bg-[#494336] mt-[102px] sm:mt-[88px] lg:mt-[98px] relative"
+        data-aos="fade-down"
+        data-aos-duration="1000"
+      >
         <div
           class="absolute right-0 max-md:top-4 md:bottom-15 max-sm:max-w-[272px] max-md:max-w-[272px] max-lg:max-w-[400px] max-xl:max-w-[500px] xl:max-w-[600px]"
         >
@@ -153,7 +158,7 @@
         </div>
         <div class="max-w-[1160px] px-[32px] sm:px-[40px] mx-auto">
           <div
-            class="max-w-[631px] pt-[176px] md:pt-[133px] pb-[65px] md:pb-[90px]"
+            class="max-w-[631px] pt-[176px] md:pt-[133px] pb-[60px] md:pb-[80px]"
           >
             <p
               class="text-[32px] sm:text-[40px] md:text-[50px] lg:text-[60px] xl:text-[70px] text-[#D7D9DD] leading-[normal]"
@@ -161,7 +166,7 @@
               Diagnostics
             </p>
             <p
-              class="text-sm sm:text-base md:text-lg lg:text-xl text-[#D7D9DD] leading-[157%] sm:leading-[130%] mt-[30px] sm:mt-5 mb-[51px] sm:mb-12"
+              class="text-sm sm:text-base md:text-lg lg:text-xl text-[#D7D9DD] leading-[157%] sm:leading-[130%] mt-[30px] sm:mt-5 mb-[45px] sm:mb-10"
             >
               At Nebula Vets, we are committed to providing comprehensive and
               advanced diagnostic testing to ensure the well-being of your
@@ -187,12 +192,14 @@
         <div class="absolute bottom-0 w-full">
           <img
             class="mx-auto"
-            src="./assetes/img/png/health-exam-bg-img.png"
+            src="./assetes/img/png/motion-2-bg-img.png"
             alt=""
           />
         </div>
         <div
           class="max-w-[1160px] mx-auto px-[32px] sm:px-[40px] pt-[60px] sm:pt-20 pb-[120px] sm:pb-[140px] relative z-[1]"
+          data-aos="zoom-out"
+          data-aos-duration="1000"
         >
           <p
             class="text-[#494336] text-2xl sm:text-[30px] md:text-[36px] lg:text-[42px] xl:text-[48px] leading-[normal] mb-5 sm:mb-[30px]"
@@ -221,11 +228,13 @@
       </div>
     </section>
     <!--  -->
-    <section>
+    <section class="overflow-hidden">
       <div class="max-w-[1160px] mx-auto px-[32px] sm:px-[40px] py-15 sm:py-20">
         <div>
           <div>
             <button
+              data-aos="fade-right"
+              data-aos-duration="1000"
               class="toggle-button w-full items-center border-b-[2px] border-solid border-c-liner pb-[32px] group"
             >
               <div class="flex justify-between w-full items-center gap-5">
@@ -297,6 +306,8 @@
               </p>
             </button>
             <button
+              data-aos="fade-left"
+              data-aos-duration="1000"
               class="toggle-button w-full items-center border-b-[2px] border-solid border-c-liner py-[32px] group"
             >
               <div class="flex justify-between w-full items-center gap-5">
@@ -368,6 +379,8 @@
               </p>
             </button>
             <button
+              data-aos="fade-right"
+              data-aos-duration="1000"
               class="toggle-button w-full items-center border-b-[2px] border-solid border-c-liner py-[32px] group"
             >
               <div class="flex justify-between w-full items-center gap-5">
@@ -439,6 +452,8 @@
               </p>
             </button>
             <button
+              data-aos="fade-left"
+              data-aos-duration="1000"
               class="toggle-button w-full items-center border-b-[2px] border-solid border-c-liner py-[32px] group"
             >
               <div class="flex justify-between w-full items-center gap-5">
@@ -510,6 +525,8 @@
               </p>
             </button>
             <button
+              data-aos="fade-right"
+              data-aos-duration="1000"
               class="toggle-button w-full items-center border-b-[2px] border-solid border-c-liner py-[32px] group"
             >
               <div class="flex justify-between w-full items-center gap-5">
@@ -580,6 +597,8 @@
               </p>
             </button>
             <button
+              data-aos="fade-left"
+              data-aos-duration="1000"
               class="toggle-button w-full items-center border-b-[2px] border-solid border-c-liner py-[32px] group"
             >
               <div class="flex justify-between w-full items-center gap-5">
@@ -653,6 +672,8 @@
               </p>
             </button>
             <button
+              data-aos="fade-right"
+              data-aos-duration="1000"
               class="toggle-button w-full items-center border-b-[2px] border-solid border-c-liner py-[32px] group"
             >
               <div class="flex justify-between w-full items-center gap-5">
@@ -732,6 +753,8 @@
       <div class="bg-[rgba(215,217,221,0.50)]">
         <div
           class="max-w-[1160px] mx-auto px-[32px] sm:px-[40px] py-15 sm:py-20"
+          data-aos="zoom-out"
+          data-aos-duration="1000"
         >
           <p
             class="text-[#494336] text-2xl sm:text-[30px] md:text-[36px] lg:text-[42px] xl:text-[48px] leading-[normal] mb-[30px]"
@@ -757,6 +780,8 @@
         <div>
           <div>
             <button
+              data-aos="fade-right"
+              data-aos-duration="1000"
               class="toggle-button w-full items-center border-b-[2px] border-solid border-c-liner pb-[32px] group"
             >
               <div class="flex justify-between w-full items-center gap-5">
@@ -828,6 +853,8 @@
               </p>
             </button>
             <button
+              data-aos="fade-left"
+              data-aos-duration="1000"
               class="toggle-button w-full items-center border-b-[2px] border-solid border-c-liner py-[32px] group"
             >
               <div class="flex justify-between w-full items-center gap-5">
@@ -899,6 +926,8 @@
               </p>
             </button>
             <button
+              data-aos="fade-right"
+              data-aos-duration="1000"
               class="toggle-button w-full items-center border-b-[2px] border-solid border-c-liner py-[32px] group"
             >
               <div class="flex justify-between w-full items-center gap-5">
@@ -972,140 +1001,118 @@
       </div>
     </section>
     <!-- slider -->
-    <!-- <section>
-      <div class="bg-[rgba(215,217,221,0.50)]">
+    <section>
+      <div class="bg-white overflow-hidden">
         <div
-          class="max-w-[1160px] mx-auto px-[32px] sm:px-[40px] py-15 sm:py-20"
+          class="max-w-[1160px] px-[32px] sm:px-[40px] py-[60px] sm:py-[80px] mx-auto"
         >
-          <p
-            class="mb-10 text-[#494336] text-2xl sm:text-[30px] md:text-[36px] lg:text-[42px] xl:text-[48px] leading-[normal]"
+          <h2
+            class="text-[#464334] text-2xl sm:text-4xl lg:text-[48px] text-gredient"
           >
             Available SNAP Tests
-          </p>
-          <div class="swiper mySwiper">
-            <div class="swiper-wrapper gap-2 md:gap-5">
-              <div
-                class="swiper-slide bg-[#464334] relative !w-full sm:!max-w-[50%] !h-[420px]"
-              >
-                <div class="absolute bottom-0 right-0">
-                  <img
-                    src="./assetes/img/png/snap-test-dog-img.png"
-                    alt="dog-img"
-                  />
-                </div>
+          </h2>
+          <div class="text-[#D7D9DD] mt-10">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <!-- Puppy Schedule Card -->
                 <div
-                  class="pt-[29px] lg:pt-[44px] pb-[119px] lg:pb-[23px] pl-[10px] lg:pl-5 xl:pl-[42px] pr-2"
+                  class="swiper-slide !h-[461px] !lg:h-[471px]"
+                  data-aos="flip-left"
+                  data-aos-duration="1000"
                 >
-                  <ul
-                    class="flex items-center text-base sm:text-xl lg:text-2xl text-[#D7D9DD] list-disc roboto-mono ml-5"
+                  <div
+                    class="bg-[#464334] h-full pt-5 md:pt-[34px] pr-3 md:pr-5 pl-8 md:pl-[48px] pb-8 md:pb-[57px] relative"
                   >
-                    <li>SNAP Lepto Test</li>
-                  </ul>
-                  <ul
-                    class="flex items-center text-sm sm:text-base md:text-lg lg:text-xl text-[#D7D9DD] list-disc ml-10 leading-[22px] mb-8"
-                  >
-                    <li>Add description</li>
-                  </ul>
-                  <ul
-                    class="flex items-center text-base sm:text-xl lg:text-2xl text-[#D7D9DD] list-disc roboto-mono ml-5"
-                  >
-                    <li>SNAP cPL Test</li>
-                  </ul>
-                  <ul
-                    class="flex items-center text-sm sm:text-base md:text-lg lg:text-xl text-[#D7D9DD] list-disc ml-10 leading-[22px] mb-8"
-                  >
-                    <li>Assess canine pancreatic health</li>
-                  </ul>
-                  <ul
-                    class="flex items-center text-base sm:text-xl lg:text-2xl text-[#D7D9DD] list-disc roboto-mono ml-5"
-                  >
-                    <li>SNAP Giardia Test</li>
-                  </ul>
-                  <ul
-                    class="flex items-center text-sm sm:text-base md:text-lg lg:text-xl text-[#D7D9DD] list-disc ml-10 leading-[22px] mb-8"
-                  >
-                    <li>Add description</li>
-                  </ul>
-                  <ul
-                    class="flex items-center text-base sm:text-xl lg:text-2xl text-[#D7D9DD] list-disc roboto-mono ml-5"
-                  >
-                    <li>SNAP Parvo Test</li>
-                  </ul>
-                  <ul
-                    class="flex items-center text-sm sm:text-base md:text-lg lg:text-xl text-[#D7D9DD] list-disc ml-10 leading-[22px] mb-8"
-                  >
-                    <li>Add description</li>
-                  </ul>
+                    <div class="absolute bottom-0 right-0">
+                      <img
+                        src="./assetes/img/png/snap-test-dog-img.png"
+                        alt="snap-card-image"
+                      />
+                    </div>
+                    <ul class="text-[#D7D9DD] list-disc pl-6">
+                      <li class="text-base roboto sm:text-xl lg:text-2xl mt-9">
+                        SNAP Lepto Test
+                      </li>
+                      <li class="text-sm sm:text-base">Add description</li>
+                      <li class="text-base roboto sm:text-xl lg:text-2xl mt-9">
+                        SNAP cPL Test
+                      </li>
+                      <li class="text-sm sm:text-base">
+                        Assess canine pancreatic health
+                      </li>
+                      <li class="text-base roboto sm:text-xl lg:text-2xl mt-9">
+                        SNAP Giardia Test
+                      </li>
+                      <li class="text-sm sm:text-base">Add description</li>
+                      <li class="text-base roboto sm:text-xl lg:text-2xl mt-9">
+                        SNAP Parvo Test
+                      </li>
+                      <li class="text-sm sm:text-base">Add description</li>
+                    </ul>
+                  </div>
                 </div>
-              </div>
-              <div
-                class="swiper-slide bg-[#464334] relative !w-full sm:!max-w-[50%] !h-[420px]"
-              >
-                <div class="absolute bottom-0 right-0">
-                  <img
-                    src="./assetes/img/png/snap-slider-cat-img.png"
-                    alt="dog-img"
-                  />
-                </div>
+
+                <!-- Kitten Schedule Card -->
                 <div
-                  class="pt-[29px] lg:pt-[44px] pb-[119px] lg:pb-[23px] pl-[10px] lg:pl-5 xl:pl-[42px] pr-2 lg:pr-5 max-w-[90%]"
+                  class="swiper-slide !h-[461px] !lg:h-[471px]"
+                  data-aos="flip-right"
+                  data-aos-duration="1000"
                 >
-                  <ul
-                    class="flex items-center text-base sm:text-xl lg:text-2xl text-[#D7D9DD] list-disc roboto-mono ml-5"
+                  <div
+                    class="bg-[#464334] h-full pt-5 md:pt-[34px] pr-3 md:pr-5 pl-8 md:pl-[48px] pb-8 md:pb-[57px] relative"
                   >
-                    <li>SNAP FIV/FeLV Combo Test</li>
-                  </ul>
-                  <ul
-                    class="flex items-center text-sm sm:text-base md:text-lg lg:text-xl text-[#D7D9DD] list-disc ml-10 leading-[22px] mb-8"
-                  >
-                    <li>Add description</li>
-                  </ul>
-                  <ul
-                    class="flex items-center text-base sm:text-xl lg:text-2xl text-[#D7D9DD] list-disc roboto-mono ml-5"
-                  >
-                    <li>SNAP fPL Test</li>
-                  </ul>
-                  <ul
-                    class="flex items-center text-sm sm:text-base md:text-lg lg:text-xl text-[#D7D9DD] list-disc ml-10 leading-[22px] mb-8"
-                  >
-                    <li>Assess feline pancreatic health</li>
-                  </ul>
-                  <ul
-                    class="flex items-center text-base sm:text-xl lg:text-2xl text-[#D7D9DD] list-disc roboto-mono ml-5"
-                  >
-                    <li>SNAP Giardia Test</li>
-                  </ul>
-                  <ul
-                    class="flex items-center text-sm sm:text-base md:text-lg lg:text-xl text-[#D7D9DD] list-disc ml-10 leading-[22px] mb-8"
-                  >
-                    <li>Add description</li>
-                  </ul>
-                  <ul
-                    class="flex items-center text-base sm:text-xl lg:text-2xl text-[#D7D9DD] list-disc roboto-mono ml-5"
-                  >
-                    <li>SNAP Feline proBNP Testt</li>
-                  </ul>
-                  <ul
-                    class="flex items-center text-sm sm:text-base md:text-lg lg:text-xl text-[#D7D9DD] list-disc ml-10 leading-[22px] mb-8"
-                  >
-                    <li>Quickly assess cats with cardiac risk factors</li>
-                  </ul>
+                    <div class="absolute bottom-0 right-0">
+                      <img
+                        src="./assetes/img/png/snap-slider-cat-img.png"
+                        alt="snap-card-image"
+                      />
+                    </div>
+                    <ul class="text-[#D7D9DD] list-disc pl-6">
+                      <li class="text-base roboto sm:text-xl lg:text-2xl mt-9">
+                        SNAP FIV/FeLV Combo Test
+                      </li>
+                      <li class="text-sm sm:text-base ml-3.5">
+                        Add description
+                      </li>
+                      <li class="text-base roboto sm:text-xl lg:text-2xl mt-9">
+                        SNAP fPL Test
+                      </li>
+                      <li class="text-sm sm:text-base ml-3.5">
+                        Assess feline pancreatic health
+                      </li>
+                      <li class="text-base roboto sm:text-xl lg:text-2xl mt-9">
+                        SNAP Giardia Test
+                      </li>
+                      <li class="text-sm sm:text-base ml-3.5">
+                        Add description
+                      </li>
+                      <li class="text-base roboto sm:text-xl lg:text-2xl mt-9">
+                        SNAP Feline proBNP Test �
+                      </li>
+                      <li class="text-sm sm:text-base ml-3.5">
+                        Quickly assess cats with cardiac risk factors
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
+
+            <!-- Pagination placed at the bottom -->
             <div class="relative">
               <div
-                class="swiper-pagination absolute !bottom-0 !top-auto !w-auto"
+                class="swiper-pagination absolute !-bottom-7 left-0 right-0 w-full"
               ></div>
             </div>
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
+
     <!-- forward to seeing -->
     <section>
       <div
-        class="bg-[#494336] relative border-b-[2px] border-solid border-[#D8DADC] max-md:pb-[106px]"
+        class="bg-[#494336] relative border-b-[2px] border-solid border-[#D8DADC] max-md:pb-[100px]"
       >
         <div
           class="absolute right-0 w-[360px] sm:w-[400px] md:w-[500px] bottom-0"
@@ -1117,11 +1124,15 @@
           />
         </div>
         <div
-          class="max-w-[1160px] px-[32px] sm:px-[40px] pt-[60px] sm:pt-[80px] pb-[100px] sm:pb-[90px] mx-auto"
+          class="max-w-[1160px] px-[32px] sm:px-[40px] pt-[60px] sm:pt-[80px] pb-[100px] sm:pb-[80px] mx-auto"
         >
-          <div class="max-w-[530px]">
+          <div
+            class="max-w-[530px]"
+            data-aos="zoom-out"
+            data-aos-duration="1000"
+          >
             <p
-              class="text-2xl sm:text-[30px] md:text-[36px] text-[#D7D9DD] mb-[45px] leading-[109%]"
+              class="text-2xl sm:text-[30px] md:text-[36px] text-[#D7D9DD] mb-[40px] leading-[normal]"
             >
               We look forward to seeing you and your pet soon!
             </p>
@@ -1368,7 +1379,7 @@
       });
     </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <!-- <script>
+    <script>
       var swiper = new Swiper(".mySwiper", {
         pagination: {
           el: ".swiper-pagination",
@@ -1376,7 +1387,7 @@
         breakpoints: {
           300: {
             slidesPerView: 1,
-            spaceBetween: 10,
+            spaceBetween: 20,
             loop: true,
 
             autoplay: {
@@ -1385,7 +1396,7 @@
             },
           },
           640: {
-            slidesPerView: 1,
+            slidesPerView: 2,
             spaceBetween: 20,
             loop: true,
 
@@ -1396,6 +1407,10 @@
           },
         },
       });
-    </script> -->
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

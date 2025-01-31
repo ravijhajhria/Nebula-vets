@@ -15,6 +15,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- navbar -->
@@ -40,7 +41,7 @@
               >SERVICES</a
             >
             <a
-              class="roboto-mono text-[#D7D9DD] hover:text-white font-medium tracking-[1.4px] text-sm links duration-700"
+              class="roboto-mono text-linear-gradient hover:text-white font-medium tracking-[1.4px] text-sm links duration-700"
               href="./about.html"
               >ABOUT US</a
             >
@@ -105,7 +106,7 @@
                     >SERVICES</a
                   >
                   <a
-                    class="roboto-mono text-[#D7D9DD] hover:text-white font-medium tracking-[1.4px] text-sm links duration-700"
+                    class="roboto-mono text-linear-gradient hover:text-white font-medium tracking-[1.4px] text-sm links duration-700"
                     href="./about.html"
                     >ABOUT US</a
                   >
@@ -141,7 +142,11 @@
     </div>
     <!-- hero-section -->
     <section>
-      <div class="bg-[#494336] mt-[102px] sm:mt-[88px] lg:mt-[98px] relative">
+      <div
+        class="bg-[#494336] mt-[102px] sm:mt-[88px] lg:mt-[98px] relative"
+        data-aos="fade-down"
+        data-aos-duration="1000"
+      >
         <div
           class="absolute right-2 max-md:top-5 lg:top-20 xl:top-15 max-sm:max-w-[253px] max-md:max-w-[300px] max-lg:max-w-[350px] max-xl:max-w-[460px] max-md:hidden"
         >
@@ -199,12 +204,14 @@
       </div>
     </section>
     <!--  -->
-    <section>
+    <section class="overflow-hidden">
       <div
         class="max-w-[1160px] px-[32px] sm:px-[40px] mx-auto py-15 sm:py-20 flex justify-between gap-y-15 gap-15 max-lg:flex-wrap"
       >
         <div
           class="min-[1220px]:ml-[-5%] min-[1280px]:ml-[-8%] min-[1360px]:ml-[-12%] lg:w-[55.6%] max-w-[600px] mx-auto relative"
+          data-aos="fade-right"
+          data-aos-duration="1000"
         >
           <p
             class="absolute text-2xl top-5 sm:top-11 left-2 sm:left-4 roboto-mono text-white"
@@ -217,7 +224,12 @@
             alt="img"
           />
         </div>
-        <div class="lg:w-[50.65%]">
+        <div
+          class="lg:w-[50.65%]"
+          class="min-[1220px]:ml-[-5%] min-[1280px]:ml-[-8%] min-[1360px]:ml-[-12%] lg:w-[55.6%] max-w-[600px] mx-auto relative"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+        >
           <p class="roboto-mono text-2xl text-[#494336] mb-5 hidden md:block">
             Inspiration and Vision
           </p>
@@ -250,14 +262,18 @@
     </section>
     <!--  -->
     <section>
-      <div class="bg-[rgba(215,217,221,0.50)] relative">
+      <div class="bg-[rgba(215,217,221,0.50)] relative overflow-hidden">
         <div class="absolute bottom-0">
           <img src="./assetes/img/png/about-img-2-bg-img.png" alt="bg-img" />
         </div>
         <div
-          class="max-w-[1160px] px-[32px] sm:px-[40px] mx-auto py-15 sm:py-20 flex justify-between gap-y-15 gap-15 max-lg:flex-wrap-reverse"
+          class="max-w-[1160px] px-[32px] sm:px-[40px] mx-auto py-15 sm:py-20 flex justify-between gap-y-15 gap-15 max-lg:flex-wrap-reverse relative z-[1]"
         >
-          <div class="lg:w-[50.65%]">
+          <div
+            class="lg:w-[50.65%]"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
             <p class="roboto-mono text-2xl text-[#494336] mb-5 hidden md:block">
               Innovation and Cutting-Edge Technology
             </p>
@@ -293,6 +309,8 @@
           </div>
           <div
             class="min-[1220px]:mr-[-5%] min-[1280px]:mr-[-8%] min-[1360px]:mr-[-12%] lg:w-[55.6%] max-w-[600px] mx-auto relative"
+            data-aos="fade-left"
+            data-aos-duration="1000"
           >
             <p
               class="absolute text-2xl top-5 sm:top-11 left-2 sm:left-4 roboto-mono text-white hidden sm:block"
@@ -309,12 +327,14 @@
       </div>
     </section>
     <!--  -->
-    <section>
+    <section class="overflow-hidden">
       <div
         class="max-w-[1160px] px-[32px] sm:px-[40px] mx-auto py-15 sm:py-20 flex justify-between gap-y-15 gap-15 max-lg:flex-wrap"
       >
         <div
           class="min-[1220px]:ml-[-5%] min-[1280px]:ml-[-8%] min-[1360px]:ml-[-12%] lg:w-[55.6%] max-w-[600px] mx-auto relative"
+          data-aos="fade-right"
+          data-aos-duration="1000"
         >
           <img
             class="w-full"
@@ -322,7 +342,11 @@
             alt="img"
           />
         </div>
-        <div class="lg:w-[50.65%]">
+        <div
+          class="lg:w-[50.65%]"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+        >
           <p class="roboto-mono text-2xl text-[#494336] mb-5 hidden md:block">
             Community Engagement and Education
           </p>
@@ -358,7 +382,11 @@
     <!-- our team -->
     <section>
       <div class="bg-[#494336] border-b-[2px] border-solid border-[#D7D9DD]">
-        <div class="max-w-[1440px] px-8 sm:px-10 py-15 sm:py-20 mx-auto">
+        <div
+          class="max-w-[1440px] px-8 sm:px-10 py-15 sm:py-20 mx-auto"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+        >
           <p
             class="text-2xl sm:text-[30px] md:text-[40px] lg:text-[60px] xl:text-[70px] text-[#D7D9DD] text-center mb-[50px] sm:mb-15"
           >
@@ -675,6 +703,10 @@
         sidebar.classList.add("translate-x-full");
         overlay.classList.add("hidden");
       });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>

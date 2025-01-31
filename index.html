@@ -15,6 +15,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <style>
     .swiper-slide {
@@ -148,7 +149,7 @@
       </div>
     </div>
     <!-- hero section -->
-    <section>
+    <section data-aos="fade-down" data-aos-duration="1000">
       <div
         class="sm:bg-[url('./assetes/img/png/Hero-bg.png')] bg-cover mt-[103px] sm:mt-[88px] lg:mt-[98px] max-sm:bg-[rgba(215,217,221,0.50)]"
       >
@@ -188,19 +189,23 @@
     </section>
     <!-- our approach -->
     <section>
-      <div class="bg-[rgba(215,217,221,0.50)]">
+      <div class="bg-[rgba(215,217,221,0.50)] overflow-hidden">
         <div
           class="max-w-[1160px] px-8 sm:px-10 py-[56px] sm:py-[82px] mx-auto"
         >
           <div class="flex gap-[13px] sm:gap-[57px] max-sm:flex-col">
             <p
               class="text-2xl sm:text-[26px] md:text-[30px] lg:text-[36px] text-[#494336] text-start"
+              data-aos="fade-right"
+              data-aos-duration="1000"
             >
               Our <br class="hidden" />
               Approach
             </p>
             <p
               class="text-sm sm:text-base md:text-lg lg:text-xl leading-[157%] sm:leading-[130%] text-[#494336]"
+              data-aos="fade-left"
+              data-aos-duration="1000"
             >
               At our independent veterinary hospital, we combine compassion,
               advanced expertise, and a commitment to exceptional care. From
@@ -214,7 +219,7 @@
     </section>
     <!-- why choose -->
     <section>
-      <div class="bg-[#494336]">
+      <div class="bg-[#494336] overflow-hidden">
         <div
           class="max-w-[1160px] px-8 sm:px-10 py-[60px] sm:py-[80px] mx-auto"
         >
@@ -226,7 +231,11 @@
           <div
             class="flex max-sm:flex-wrap gap-y-0 sm:gap-x-[25px] max-[850px]:gap-x-[40px] gap-x-[70px] sm:justify-between"
           >
-            <div class="w-full sm:w-[50%] sm:max-w-[480px]">
+            <div
+              class="w-full sm:w-[50%] sm:max-w-[480px]"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
               <div
                 class="toggle-button w-full items-center border-b-[2px] border-solid border-c-liner group"
               >
@@ -441,7 +450,11 @@
                 </p>
               </div>
             </div>
-            <div class="w-full sm:w-[50%] sm:max-w-[480px]">
+            <div
+              class="w-full sm:w-[50%] sm:max-w-[480px]"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            >
               <div
                 class="toggle-button w-full items-center border-b-[2px] border-solid border-c-liner group"
               >
@@ -662,7 +675,11 @@
     </section>
     <!-- our services -->
     <section>
-      <div class="max-w-[1160px] px-8 sm:px-10 py-[58px] sm:py-[78px] mx-auto">
+      <div
+        class="max-w-[1160px] px-8 sm:px-10 py-[58px] sm:py-[78px] mx-auto"
+        data-aos="zoom-in"
+        data-aos-duration="1000"
+      >
         <p
           class="text-2xl sm:text-[30px] md:text-[36px] lg:text-[42px] xl:text-[48px] text-[#494336] mb-[13px] md:mb-[20px] lg:mb-[30px] leading-[normal]"
         >
@@ -690,7 +707,11 @@
         class="swiper mySwiper !pb-[90px] sm:!pb-30 lg:!pb-[140px] !max-w-[1440px] !pl-[32px] md:!px-[70px] !mx-auto"
       >
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
+          <div
+            class="swiper-slide"
+            data-aos="flip-right"
+            data-aos-duration="1000"
+          >
             <div
               class="bg-[#494336] flex flex-col justify-start max-w-[400px] sm:pl-5 sm:pt-[25px] pt-3 pl-3 sm:pr-4 pr-3 h-[339px] sm:h-[419px]"
             >
@@ -728,7 +749,11 @@
               </div>
             </div>
           </div>
-          <div class="swiper-slide">
+          <div
+            class="swiper-slide"
+            data-aos="flip-left"
+            data-aos-duration="1000"
+          >
             <div
               class="bg-[#494336] flex flex-col justify-start max-w-[400px] sm:pl-5 sm:pt-[25px] pt-3 pl-3 sm:pr-4 pr-3 h-[339px] sm:h-[419px]"
             >
@@ -772,7 +797,11 @@
               </div>
             </div>
           </div>
-          <div class="swiper-slide">
+          <div
+            class="swiper-slide"
+            data-aos="flip-right"
+            data-aos-duration="1000"
+          >
             <div
               class="bg-[#494336] flex flex-col justify-start max-w-[400px] sm:pl-5 sm:pt-[25px] pt-3 pl-3 sm:pr-4 pr-3 h-[339px] sm:h-[419px]"
             >
@@ -804,7 +833,11 @@
               </div>
             </div>
           </div>
-          <div class="swiper-slide">
+          <div
+            class="swiper-slide"
+            data-aos="flip-left"
+            data-aos-duration="1000"
+          >
             <div
               class="bg-[#494336] flex flex-col justify-start max-w-[400px] sm:pl-5 sm:pt-[25px] pt-3 pl-3 sm:pr-4 pr-3 h-[339px] sm:h-[419px]"
             >
@@ -852,7 +885,9 @@
     </section>
     <!-- about -->
     <section>
-      <div class="bg-[#D7D9DD80] pt-[33px] sm:py-12 lg:py-[80px] relative">
+      <div
+        class="bg-[#D7D9DD80] pt-[33px] sm:py-12 lg:py-[80px] relative overflow-hidden"
+      >
         <div
           class="absolute -bottom-0 right-0 max-w-[189px] lg:top-0 lg:max-w-[348px] xl:max-w-[392px]"
         >
@@ -866,14 +901,22 @@
           <div
             class="flex gap-y-[60px] gap-x-[69px] flex-wrap lg:flex-nowrap justify-between items-center"
           >
-            <div class="lg:min-w-[400px] max-w-[591px] mx-auto lg:mx-0">
+            <div
+              class="lg:min-w-[400px] max-w-[591px] mx-auto lg:mx-0"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
               <img
                 class="w-full"
                 src="./assetes/img/png/dog-cat-img.png"
                 alt="cat-dog"
               />
             </div>
-            <div class="text-[#494336] max-w-[639px]">
+            <div
+              class="text-[#494336] max-w-[639px]"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            >
               <h2
                 class="text-2xl sm:text-[35px] lg:text-[48px] leading-[normal]"
               >
@@ -920,7 +963,11 @@
         <div
           class="max-w-[1160px] px-8 sm:px-10 py-[60px] sm:py-[80px] mx-auto"
         >
-          <div class="max-w-[568px]">
+          <div
+            class="max-w-[568px]"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+          >
             <p
               class="text-2xl sm:text-[30px] md:text-[36px] lg:text-[42px] xl:text-[48px] text-[#D7D9DD] mb-[13px] sm:mb-[20px] leading-[normal]"
             >
@@ -1210,6 +1257,10 @@
           1200: { slidesPerView: 4 },
         },
       });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>
