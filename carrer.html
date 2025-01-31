@@ -18,21 +18,14 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <style>
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
     .swiper-slide {
-      height: 384px !important;
-      width: 428px !important;
-    }
-    @media (max-width: 350px) {
-      .swiper-slide {
-        height: 250px !important;
-        width: 260px !important;
-      }
-    }
-    @media (max-width: 600px) {
-      .swiper-slide {
-        height: 296px !important;
-        width: 296px !important;
-      }
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     .swiper-pagination-bullet-active {
       background: linear-gradient(
@@ -215,45 +208,109 @@
         </div>
       </section>
       <!-- slider -->
-      <section class="!bg-[#494336] max-[400px]:px-8">
+      <section class="!bg-[#494336] max-[400px]:px-8 !mt-[-2px]">
         <div
-          class="swiper mySwiper !pb-[60px] sm:!pb-[90px] md:!pb-[120px] !max-w-[1440px] !mx-auto"
+          class="swiper mySwiper !pb-[60px] sm:!pb-[90px] md:!pb-[120px] !mx-auto"
         >
           <div class="swiper-wrapper">
             <div class="swiper-slide block sm:!hidden">
-              <img
-                class="w-full h-full"
-                src="./assetes/img/png/slider2-img-1.png"
-                alt="slider"
-              />
+              <div
+                class="max-[350px]:!h-[250px] max-[600px]:h-[296px] min-[600px]:h-[428px] w-full"
+              >
+                <img
+                  class="w-full h-full object-cover"
+                  src="./assetes/img/png/slider2-img-1.png"
+                  alt="slider"
+                />
+              </div>
             </div>
             <div class="swiper-slide">
-              <img
-                class="w-full h-full"
-                src="./assetes/img/png/carrer-slider-img-1.png"
-                alt="slider-img"
-              />
+              <div
+                class="max-[350px]:!h-[250px] max-[600px]:h-[296px] min-[600px]:h-[428px] w-full"
+              >
+                <img
+                  class="w-full h-full object-cover"
+                  src="./assetes/img/png/carrer-slider-img-1.png"
+                  alt="slider-img"
+                />
+              </div>
             </div>
             <div class="swiper-slide">
-              <img
-                class="w-full h-full"
-                src="./assetes/img/png/carrer-slider-img-2.png"
-                alt="slider-img"
-              />
+              <div
+                class="max-[350px]:!h-[250px] max-[600px]:h-[296px] min-[600px]:h-[428px] w-full"
+              >
+                <img
+                  class="w-full h-full object-cover"
+                  src="./assetes/img/png/carrer-slider-img-2.png"
+                  alt="slider-img"
+                />
+              </div>
             </div>
             <div class="swiper-slide">
-              <img
-                class="w-full h-full"
-                src="./assetes/img/png/carrer-slider-img-3.png"
-                alt="slider-img"
-              />
+              <div
+                class="max-[350px]:!h-[250px] max-[600px]:h-[296px] min-[600px]:h-[428px] w-full"
+              >
+                <img
+                  class="w-full h-full object-cover"
+                  src="./assetes/img/png/carrer-slider-img-3.png"
+                  alt="slider-img"
+                />
+              </div>
             </div>
             <div class="swiper-slide">
-              <img
-                class="w-full h-full"
-                src="./assetes/img/png/carrer-slider-img-4.png"
-                alt="slider-img"
-              />
+              <div
+                class="max-[350px]:!h-[250px] max-[600px]:h-[296px] min-[600px]:h-[428px] w-full"
+              >
+                <img
+                  class="w-full h-full object-cover"
+                  src="./assetes/img/png/carrer-slider-img-4.png"
+                  alt="slider-img"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="max-[350px]:!h-[250px] max-[600px]:h-[296px] min-[600px]:h-[428px] w-full"
+              >
+                <img
+                  class="w-full h-full object-cover"
+                  src="./assetes/img/png/carrer-slider-img-1.png"
+                  alt="slider-img"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="max-[350px]:!h-[250px] max-[600px]:h-[296px] min-[600px]:h-[428px] w-full"
+              >
+                <img
+                  class="w-full h-full object-cover"
+                  src="./assetes/img/png/carrer-slider-img-2.png"
+                  alt="slider-img"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="max-[350px]:!h-[250px] max-[600px]:h-[296px] min-[600px]:h-[428px] w-full"
+              >
+                <img
+                  class="w-full h-full object-cover"
+                  src="./assetes/img/png/carrer-slider-img-3.png"
+                  alt="slider-img"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="max-[350px]:!h-[250px] max-[600px]:h-[296px] min-[600px]:h-[428px] w-full"
+              >
+                <img
+                  class="w-full h-full object-cover"
+                  src="./assetes/img/png/carrer-slider-img-4.png"
+                  alt="slider-img"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -1008,21 +1065,22 @@
             slidesPerView: 1,
             spaceBetween: 20,
             loop: true,
-
             autoplay: {
               delay: 2500,
               disableOnInteraction: false,
             },
           },
-          540: {
-            slidesPerView: 2,
+          400: {
+            slidesPerView: 1.3,
             spaceBetween: 20,
             loop: true,
-
             autoplay: {
               delay: 2500,
               disableOnInteraction: false,
             },
+          },
+          500: {
+            slidesPerView: 1.7,
           },
           768: {
             slidesPerView: 2.2,
@@ -1033,7 +1091,15 @@
           1124: {
             slidesPerView: 3.5,
           },
-          1250: { slidesPerView: 3.8 },
+          1250: {
+            slidesPerView: 3.8,
+          },
+          1700: {
+            slidesPerView: 5,
+          },
+          2200: {
+            slidesPerView: 6,
+          },
         },
       });
     </script>
