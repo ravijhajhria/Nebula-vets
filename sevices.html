@@ -18,8 +18,24 @@
   </head>
   <style>
     .swiper-slide {
-      width: 420px !important;
-      height: 420px !important;
+      width: 426px !important;
+      height: auto !important;
+    }
+    .swiper-pagination-bullet {
+      width: 15px;
+      height: 15px;
+    }
+    @media (max-width: 640px) {
+      .swiper-slide {
+        width: 296px !important;
+        height: auto !important;
+      }
+    }
+    @media (max-width: 359px) {
+      .swiper-slide {
+        width: 270px !important;
+        height: auto !important;
+      }
     }
   </style>
   <body>
@@ -152,7 +168,7 @@
       >
         <div class="max-w-[1160px] px-[32px] sm:px-[40px] mx-auto">
           <div
-            class="max-w-[660px] pt-[30px] sm:pt-[50px] md:pt-[80px] lg:pt-[100px] xl:pt-[140px] pb-[280px] min-[950px]:pb-[90px]"
+            class="max-w-[660px] pt-[30px] sm:pt-[50px] md:pt-[80px] lg:pt-[100px] xl:pt-[140px] pb-[274px] min-[950px]:pb-[75px]"
           >
             <p
               class="text-[32px] sm:text-[40px] md:text-[50px] lg:text-[60px] xl:text-[70px] text-[#D7D9DD] leading-[normal]"
@@ -161,7 +177,7 @@
               Services
             </p>
             <p
-              class="text-sm sm:text-base md:text-lg lg:text-xl text-[#D7D9DD] leading-[157%] sm:leading-[130%] mt-[30px] sm:mt-5 mb-[51px] sm:mb-12"
+              class="text-sm sm:text-base md:text-lg lg:text-xl text-[#D7D9DD] leading-[157%] sm:leading-[130%] mt-[30px] sm:mt-5 mb-[40px] sm:mb-[36px]"
             >
               At Nebula Vets, we take pride in offering an extensive range of
               services to meet the diverse needs of our patients. Our commitment
@@ -179,72 +195,61 @@
       </div>
     </section>
     <!-- slider -->
-    <div class="py-20 bg-[#D7D9DD] px-8 sm:px-0">
+    <div class="py-[34px] sm:py-15 md:py-20 bg-[#D7D9DD] px-8 sm:px-0">
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
-          <div
-            class="swiper-slide max-[350px]:!w-[255px] max-[400px]:!w-[296px] max-sm:!w-[400px] sm:!w-[420px] max-[400px]:!h-[296px] max-sm:!h-[400px] sm:h-[420px]"
-          >
-            <div class="w-full h-full">
+          <div class="swiper-slide">
+            <div
+              class="max-sm:w-[100%] sm:w-[420px] max-sm:h-[296px] sm:h-[420px]"
+            >
               <img
-                class="h-full w-full object-cover"
+                class="w-full h-full"
                 src="./assetes/img/png/slider2-img-1.png"
-                alt=""
+                alt="slider"
               />
             </div>
           </div>
-          <div
-            class="swiper-slide max-[350px]:!w-[255px] max-[400px]:!w-[296px] max-sm:!w-[400px] sm:!w-[420px] max-[400px]:!h-[296px max-sm:!h-[400px] ] sm:h-[420px]"
-          >
-            <div class="w-full h-full">
+          <div class="swiper-slide">
+            <div
+              class="max-sm:w-[100%] sm:w-[420px] max-sm:h-[296px] sm:h-[420px]"
+            >
               <img
-                class="h-full w-full object-cover"
+                class="w-full h-full"
                 src="./assetes/img/png/slider2-img-2.png"
-                alt=""
+                alt="slider-img"
               />
             </div>
           </div>
-          <div
-            class="swiper-slide max-[350px]:!w-[255px] max-[400px]:!w-[296px] max-sm:!w-[400px] sm:!w-[420px] max-[400px]:!h-[296px max-sm:!h-[400px] ] sm:h-[420px]"
-          >
-            <div class="w-full h-full">
+          <div class="swiper-slide">
+            <div
+              class="max-sm:w-[100%] sm:w-[420px] max-sm:h-[296px] sm:h-[420px]"
+            >
               <img
-                class="h-full w-full object-cover"
+                class="w-full h-full"
                 src="./assetes/img/png/slider2-img-3.png"
-                alt=""
+                alt="slider-img"
               />
             </div>
           </div>
-          <div
-            class="swiper-slide max-[350px]:!w-[255px] max-[400px]:!w-[296px] max-sm:!w-[400px] sm:!w-[420px] max-[400px]:!h-[296px] max-sm:!h-[400px] sm:h-[420px]"
-          >
-            <div class="w-full h-full">
+          <div class="swiper-slide">
+            <div
+              class="max-sm:w-[100%] sm:w-[420px] max-sm:h-[296px] sm:h-[420px]"
+            >
               <img
-                class="h-full w-full object-cover"
+                class="w-full h-full"
                 src="./assetes/img/png/slider2-img-4.png"
-                alt=""
+                alt="slider-img"
               />
             </div>
           </div>
-          <div
-            class="swiper-slide max-[350px]:!w-[255px] max-[400px]:!w-[296px] max-sm:!w-[400px] sm:!w-[420px] max-[400px]:!h-[296px max-sm:!h-[400px] ] sm:h-[420px]"
-          >
-            <div class="w-full h-full">
+          <div class="swiper-slide">
+            <div
+              class="max-sm:w-[100%] sm:w-[420px] max-sm:h-[296px] sm:h-[420px]"
+            >
               <img
-                class="h-full w-full object-cover"
-                src="./assetes/img/png/slider2-img-1.png"
-                alt=""
-              />
-            </div>
-          </div>
-          <div
-            class="swiper-slide max-[350px]:!w-[255px] max-[400px]:!w-[296px] max-sm:!w-[400px] sm:!w-[420px] max-[400px]:!h-[296px max-sm:!h-[400px] ] sm:h-[420px]"
-          >
-            <div class="w-full h-full">
-              <img
-                class="h-full w-full object-cover"
-                src="./assetes/img/png/slider2-img-2.png"
-                alt=""
+                class="w-full h-full"
+                src="./assetes/img/png/slider2-img-3.png"
+                alt="slider-img"
               />
             </div>
           </div>
@@ -257,33 +262,33 @@
     <!-- tab section -->
     <section>
       <div class="bg-[#494336]">
-        <div class="max-w-[1320px] mx-auto px-10 py-[45px] md:py-[80px]">
+        <div class="max-w-[1320px] mx-auto px-10 py-[44px] md:py-[80px]">
           <div
-            class="flex flex-wrap items-center justify-between ga-y-5 gap-10"
+            class="flex flex-wrap items-center justify-between !gap-y-5 gap-x-10"
           >
             <button
-              class="text-[#D7D9DD] opacity-50 text-2xl sm:text-[26px] md:text-[30px] lg:text-[36px] border-solid border-b-[1px] tab-btn"
+              class="text-[#D7D9DD] leading-[normal] opacity-50 text-2xl sm:text-[26px] md:text-[30px] lg:text-[36px] border-solid border-b-[1px] tab-btn"
               id="btn1"
               onclick="openTab(1)"
             >
               Preventive Care
             </button>
             <button
-              class="text-[#D7D9DD] opacity-50 text-2xl sm:text-[26px] md:text-[30px] lg:text-[36px] border-solid border-b-[1px] tab-btn"
+              class="text-[#D7D9DD] leading-[normal] opacity-50 text-2xl sm:text-[26px] md:text-[30px] lg:text-[36px] border-solid border-b-[1px] tab-btn"
               id="btn2"
               onclick="openTab(2)"
             >
               Sick Patient Care
             </button>
             <button
-              class="text-[#D7D9DD] opacity-50 text-2xl sm:text-[26px] md:text-[30px] lg:text-[36px] border-solid border-b-[1px] tab-btn"
+              class="text-[#D7D9DD] leading-[normal] opacity-50 text-2xl sm:text-[26px] md:text-[30px] lg:text-[36px] border-solid border-b-[1px] tab-btn"
               id="btn3"
               onclick="openTab(3)"
             >
               Surgery
             </button>
             <button
-              class="text-[#D7D9DD] opacity-50 text-2xl sm:text-[26px] md:text-[30px] lg:text-[36px] border-solid border-b-[1px] tab-btn"
+              class="text-[#D7D9DD] leading-[normal] opacity-50 text-2xl sm:text-[26px] md:text-[30px] lg:text-[36px] border-solid border-b-[1px] tab-btn"
               id="btn4"
               onclick="openTab(4)"
             >
@@ -325,7 +330,7 @@
                   comprehensive screenings, we can identify and address any
                   problems at their earliest stages.
                 </p>
-                <div class="">
+                <div class="max-sm:hidden">
                   <a
                     class="roboto-mono text-[#494336] font-medium text-base xl:text-lg py-2 xl:py-3 px-[18px] md:px-[30px] xl:px-[38px] bg-gradient !rounded-[27px] duration-300 btn btn--2 overflow-hidden relative text-center"
                     href="#"
@@ -340,14 +345,14 @@
             <div
               class="py-[60px] max-md:px-8 md:py-20 sm:pl-8 md:pl-[40px] lg:pl-[80px] xl:pl-[110px] pr-[34px] w-full"
             >
-              <div class="mb-[59px] md:pb-[70px]">
+              <div class="pb-[59px] md:pb-[60px]">
                 <p
                   class="roboto-mono text-[#494336] text-base md:text-lg lg:text-2xl xl:text-[28px] ml-1 md:ml-3"
                 >
                   Animal Health Check
                 </p>
                 <p
-                  class="text-[#494336] text-sm sm:text-base md:text-lg lg:text-xl mt-[20px] mb-[40px] ml-1 md:ml-3 max-md:leading-[22px]"
+                  class="text-[#494336] text-sm sm:text-base md:text-lg lg:text-xl mt-[20px] mb-[30px] ml-1 md:ml-3 max-md:leading-[22px] md:leading-[26px]"
                 >
                   Our practice offers the convenience of same or next-day
                   appointments to ensure your furry companion receives prompt
@@ -364,7 +369,7 @@
                 </a>
               </div>
               <div
-                class="pt-[31px] pb-[47px] md:pb-[70px] border-solid border-black border-b-[1px] border-t-[1px]"
+                class="pt-[31px] pb-[40px] md:pb-[60px] border-solid border-black border-b-[1px] border-t-[1px]"
               >
                 <p
                   class="roboto-mono text-[#494336] text-base md:text-lg lg:text-2xl xl:text-[28px] ml-1 md:ml-3"
@@ -372,7 +377,7 @@
                   Vaccinations
                 </p>
                 <p
-                  class="text-[#494336] text-sm sm:text-base md:text-lg lg:text-xl mt-[20px] mb-[40px] ml-1 md:ml-3 max-md:leading-[22px]"
+                  class="text-[#494336] text-sm sm:text-base md:text-lg lg:text-xl mt-[20px] mb-[30px] ml-1 md:ml-3 max-md:leading-[22px] md:leading-[26px]"
                 >
                   Vaccinations are a key component of your pet’s health and
                   essential to prevent life-threatening diseases. Nebula vets
@@ -387,7 +392,7 @@
                 </a>
               </div>
               <div
-                class="pt-[31px] pb-[47px] md:pb-[70px] border-solid border-black border-b-[1px]"
+                class="pt-[31px] pb-[40px] md:pb-[60px] border-solid border-black border-b-[1px]"
               >
                 <p
                   class="roboto-mono text-[#494336] text-base md:text-lg lg:text-2xl xl:text-[28px] ml-1 md:ml-3"
@@ -395,7 +400,7 @@
                   Dentals
                 </p>
                 <p
-                  class="text-[#494336] text-sm sm:text-base md:text-lg lg:text-xl mt-[20px] mb-[40px] ml-1 md:ml-3 max-md:leading-[22px]"
+                  class="text-[#494336] text-sm sm:text-base md:text-lg lg:text-xl mt-[20px] mb-[30px] ml-1 md:ml-3 max-md:leading-[22px] md:leading-[26px]"
                 >
                   Dental disease and smelly breath is common, and regular
                   cleanings and exams can save your pet a lot of pain and
@@ -460,14 +465,14 @@
             <div
               class="py-[60px] max-md:px-8 md:py-20 sm:pl-8 md:pl-[40px] lg:pl-[80px] xl:pl-[110px] pr-[34px] w-full"
             >
-              <div class="mb-[59px] md:pb-[70px]">
+              <div class="pb-[59px] md:pb-[60px]">
                 <p
                   class="roboto-mono text-[#494336] text-base md:text-lg lg:text-2xl xl:text-[28px] ml-1 md:ml-3"
                 >
                   Urgent & Emergency Care
                 </p>
                 <p
-                  class="text-[#494336] text-sm sm:text-base md:text-lg lg:text-xl mt-[20px] mb-[40px] ml-1 md:ml-3 max-md:leading-[22px]"
+                  class="text-[#494336] text-sm sm:text-base md:text-lg lg:text-xl mt-[20px] mb-[30px] ml-1 md:ml-3 max-md:leading-[22px] md:leading-[26px]"
                 >
                   Whether your pet is sick or injured, we’re here to help get
                   them the help they need. This includes telemedicine veterinary
@@ -482,7 +487,7 @@
                 </a>
               </div>
               <div
-                class="pt-[31px] pb-[47px] md:pb-[70px] border-solid border-black border-b-[1px] border-t-[1px]"
+                class="pt-[31px] pb-[40px] md:pb-[60px] border-solid border-black border-b-[1px] border-t-[1px]"
               >
                 <p
                   class="roboto-mono text-[#494336] text-base md:text-lg lg:text-2xl xl:text-[28px] ml-1 md:ml-3"
@@ -490,7 +495,7 @@
                   Telemedicine consults
                 </p>
                 <p
-                  class="text-[#494336] text-sm sm:text-base md:text-lg lg:text-xl mt-[20px] mb-[40px] ml-1 md:ml-3 max-md:leading-[22px]"
+                  class="text-[#494336] text-sm sm:text-base md:text-lg lg:text-xl mt-[20px] mb-[30px] ml-1 md:ml-3 max-md:leading-[22px] md:leading-[26px]"
                 >
                   Nebula vets offers a fast telemedicine service, to help your
                   pet without leaving the home
@@ -503,7 +508,7 @@
                 </a>
               </div>
               <div
-                class="pt-[31px] pb-[47px] md:pb-[70px] border-solid border-black border-b-[1px]"
+                class="pt-[31px] pb-[40px] md:pb-[60px] border-solid border-black border-b-[1px]"
               >
                 <p
                   class="roboto-mono text-[#494336] text-base md:text-lg lg:text-2xl xl:text-[28px] ml-1 md:ml-3"
@@ -511,7 +516,7 @@
                   Diagnostics
                 </p>
                 <p
-                  class="text-[#494336] text-sm sm:text-base md:text-lg lg:text-xl mt-[20px] mb-[40px] ml-1 md:ml-3 max-md:leading-[22px]"
+                  class="text-[#494336] text-sm sm:text-base md:text-lg lg:text-xl mt-[20px] mb-[30px] ml-1 md:ml-3 max-md:leading-[22px] md:leading-[26px]"
                 >
                   Nebula vets has invested in the latest technology, equipped
                   for all the diagnostic tests your pet needs to stay healthy,
@@ -528,7 +533,7 @@
                 </a>
               </div>
               <div
-                class="pt-[31px] pb-[47px] md:pb-[70px] border-solid border-black border-b-[1px]"
+                class="pt-[31px] pb-[40px] md:pb-[60px] border-solid border-black border-b-[1px]"
               >
                 <p
                   class="roboto-mono text-[#494336] text-base md:text-lg lg:text-2xl xl:text-[28px] ml-1 md:ml-3"
@@ -536,7 +541,7 @@
                   Pharmacy
                 </p>
                 <p
-                  class="text-[#494336] text-sm sm:text-base md:text-lg lg:text-xl mt-[20px] mb-[40px] ml-1 md:ml-3 max-md:leading-[22px]"
+                  class="text-[#494336] text-sm sm:text-base md:text-lg lg:text-xl mt-[20px] mb-[30px] ml-1 md:ml-3 max-md:leading-[22px] md:leading-[26px]"
                 >
                   Our highly stocked on-site pharmacy inlcudes a variety of
                   prescription medications and pet health products for your pet.
@@ -598,14 +603,14 @@
             <div
               class="py-[60px] max-md:px-8 md:pt-20 md:pb-[100px] sm:pl-8 md:pl-[40px] lg:pl-[80px] xl:pl-[110px] pr-[34px] w-full"
             >
-              <div class="mb-[59px] md:pb-[70px]">
+              <div class="pb-[59px] md:pb-[60px]">
                 <p
                   class="roboto-mono text-[#494336] text-base md:text-lg lg:text-2xl xl:text-[28px] ml-1 md:ml-3"
                 >
                   Surgery
                 </p>
                 <p
-                  class="text-[#494336] text-sm sm:text-base md:text-lg lg:text-xl mt-[20px] mb-[40px] ml-1 md:ml-3 max-md:leading-[22px]"
+                  class="text-[#494336] text-sm sm:text-base md:text-lg lg:text-xl mt-[20px] mb-[30px] ml-1 md:ml-3 max-md:leading-[22px] md:leading-[26px]"
                 >
                   In our advanced state-of-the-art surgery suite, our
                   experienced doctors can perform all routine surgeries,
@@ -622,7 +627,7 @@
                 </a>
               </div>
               <div
-                class="pt-[31px] pb-[47px] md:pb-[70px] border-solid border-black border-b-[1px] border-t-[1px]"
+                class="pt-[31px] pb-[40px] md:pb-[60px] border-solid border-black border-b-[1px] border-t-[1px]"
               >
                 <p
                   class="roboto-mono text-[#494336] text-base md:text-lg lg:text-2xl xl:text-[28px] ml-1 md:ml-3"
@@ -630,7 +635,7 @@
                   Spays & Neuters
                 </p>
                 <p
-                  class="text-[#494336] text-sm sm:text-base md:text-lg lg:text-xl mt-[20px] mb-[40px] ml-1 md:ml-3 max-md:leading-[22px]"
+                  class="text-[#494336] text-sm sm:text-base md:text-lg lg:text-xl mt-[20px] mb-[30px] ml-1 md:ml-3 max-md:leading-[22px] md:leading-[26px]"
                 >
                   Our team comprises highly trained doctors who excel in routine
                   surgery and harness the full potential of our state-of-the-art
@@ -694,14 +699,14 @@
             <div
               class="py-[60px] max-md:px-8 md:py-20 sm:pl-8 md:pl-[40px] lg:pl-[80px] xl:pl-[110px] pr-[34px] w-full"
             >
-              <div class="mb-[59px] md:pb-[70px]">
+              <div class="pb-[59px] md:pb-[60px]">
                 <p
                   class="roboto-mono text-[#494336] text-base md:text-lg lg:text-2xl xl:text-[28px] ml-1 md:ml-3"
                 >
                   Travel Certificates
                 </p>
                 <p
-                  class="text-[#494336] text-sm sm:text-base md:text-lg lg:text-xl mt-[20px] mb-[40px] ml-1 md:ml-3 max-md:leading-[22px]"
+                  class="text-[#494336] text-sm sm:text-base md:text-lg lg:text-xl mt-[20px] mb-[30px] ml-1 md:ml-3 max-md:leading-[22px] md:leading-[26px]"
                 >
                   From domestic or international travel, you will usually
                   require a health certificate for your pet. We can help with
@@ -716,7 +721,7 @@
                 </a>
               </div>
               <div
-                class="pt-[31px] pb-[47px] md:pb-[70px] border-solid border-black border-b-[1px] border-t-[1px]"
+                class="pt-[31px] pb-[40px] md:pb-[60px] border-solid border-black border-b-[1px] border-t-[1px]"
               >
                 <p
                   class="roboto-mono text-[#494336] text-base md:text-lg lg:text-2xl xl:text-[28px] ml-1 md:ml-3"
@@ -724,7 +729,7 @@
                   Skin & Dermatology
                 </p>
                 <p
-                  class="text-[#494336] text-sm sm:text-base md:text-lg lg:text-xl mt-[20px] mb-[40px] ml-1 md:ml-3 max-md:leading-[22px]"
+                  class="text-[#494336] text-sm sm:text-base md:text-lg lg:text-xl mt-[20px] mb-[30px] ml-1 md:ml-3 max-md:leading-[22px] md:leading-[26px]"
                 >
                   If your pet is experiencing uncomfortable symptoms such as
                   itchy skin, hair loss, or rashes, it may be indicative of
@@ -744,7 +749,7 @@
                 </a>
               </div>
               <div
-                class="pt-[31px] pb-[47px] md:pb-[70px] border-solid border-black border-b-[1px]"
+                class="pt-[31px] pb-[40px] md:pb-[60px] border-solid border-black border-b-[1px]"
               >
                 <p
                   class="roboto-mono text-[#494336] text-base md:text-lg lg:text-2xl xl:text-[28px] ml-1 md:ml-3"
@@ -752,7 +757,7 @@
                   Microchipping
                 </p>
                 <p
-                  class="text-[#494336] text-sm sm:text-base md:text-lg lg:text-xl mt-[20px] mb-[40px] ml-1 md:ml-3 max-md:leading-[22px]"
+                  class="text-[#494336] text-sm sm:text-base md:text-lg lg:text-xl mt-[20px] mb-[30px] ml-1 md:ml-3 max-md:leading-[22px] md:leading-[26px]"
                 >
                   A microchip, resembling a tiny grain of rice in size and
                   shape, is delicately inserted beneath your pet's skin,
@@ -767,7 +772,7 @@
                 </a>
               </div>
               <div
-                class="pt-[31px] pb-[47px] md:pb-[70px] border-solid border-black border-b-[1px]"
+                class="pt-[31px] pb-[40px] md:pb-[60px] border-solid border-black border-b-[1px]"
               >
                 <p
                   class="roboto-mono text-[#494336] text-base md:text-lg lg:text-2xl xl:text-[28px] ml-1 md:ml-3"
@@ -775,7 +780,7 @@
                   Laser Therapy
                 </p>
                 <p
-                  class="text-[#494336] text-sm sm:text-base md:text-lg lg:text-xl mt-[20px] mb-[40px] ml-1 md:ml-3 max-md:leading-[22px]"
+                  class="text-[#494336] text-sm sm:text-base md:text-lg lg:text-xl mt-[20px] mb-[30px] ml-1 md:ml-3 max-md:leading-[22px] md:leading-[26px]"
                 >
                   Our state-of-the-art veterinary hospital utilizes advanced
                   laser technology to provide non-invasive and drug-free
@@ -790,7 +795,7 @@
                 </a>
               </div>
               <div
-                class="pt-[31px] pb-[47px] md:pb-[70px] border-solid border-black border-b-[1px]"
+                class="pt-[31px] pb-[40px] md:pb-[60px] border-solid border-black border-b-[1px]"
               >
                 <p
                   class="roboto-mono text-[#494336] text-base md:text-lg lg:text-2xl xl:text-[28px] ml-1 md:ml-3"
@@ -798,7 +803,7 @@
                   Hospice & Euthanasia
                 </p>
                 <p
-                  class="text-[#494336] text-sm sm:text-base md:text-lg lg:text-xl mt-[20px] mb-[40px] ml-1 md:ml-3 max-md:leading-[22px]"
+                  class="text-[#494336] text-sm sm:text-base md:text-lg lg:text-xl mt-[20px] mb-[30px] ml-1 md:ml-3 max-md:leading-[22px] md:leading-[26px]"
                 >
                   The decision to say goodbye to your pet is the most difficult
                   decision you’ll have to make. Our team at nebula vets is here

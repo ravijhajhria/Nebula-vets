@@ -21,11 +21,15 @@
       margin-right: 20px !important;
       max-width: 300px !important;
     }
+    .swiper-pagination-bullet {
+      width: 10px;
+      height: 10px;
+    }
   </style>
   <body>
     <!-- navbar -->
     <div class="bg-[#494336] fixed top-0 z-40 w-full">
-      <div class="max-w-[1440px] px-[30px] md:px-[40px] xl:px-[50px] mx-auto">
+      <div class="max-w-[1440px] px-[30px] md:px-10 xl:px-[50px] mx-auto">
         <div
           class="flex justify-between py-6 md:pt-[11px] md:pb-[18px] items-center gap-[50px]"
         >
@@ -64,7 +68,7 @@
               >PATIENT PORTAL</a
             >
             <a
-              class="roboto-mono text-[#494336] font-medium text-base xl:text-lg py-2 xl:py-3 px-[18px] md:px-[30px] xl:px-[38px] bg-gradient !rounded-[27px] duration-300 btn btn--2 overflow-hidden relative text-center"
+              class="roboto-mono text-[#494336] font-medium text-base xl:text-lg py-[6px] xl:py-3 px-[18px] md:px-[30px] xl:px-[38px] bg-gradient !rounded-[27px] duration-300 btn btn--2 overflow-hidden relative text-center"
               href="#"
             >
               <span class="btn__text">BOOK NOW</span>
@@ -73,7 +77,7 @@
           <!-- Button to Open Sidebar -->
           <button
             id="open-btn"
-            class="fixed top-4 right-4 text-white px-4 py-2 rounded-lg max-[950px]:block hidden mt-2"
+            class="fixed top-4 right-4 text-white px-4 py-2 rounded-lg max-[950px]:block hidden mt-1 md:mt-[-4px]"
           >
             <img
               class="max-w-[58px] md:max-w-[68px]"
@@ -130,7 +134,7 @@
                   >
                   <div>
                     <a
-                      class="roboto-mono text-[#494336] font-medium text-base xl:text-lg py-2 xl:py-3 px-[18px] md:px-[30px] xl:px-[38px] bg-gradient !rounded-[27px] duration-300 btn btn--2 overflow-hidden relative text-center"
+                      class="roboto-mono text-[#494336] font-medium text-base xl:text-lg py-[6px] xl:py-3 px-[18px] md:px-[30px] xl:px-[38px] bg-gradient !rounded-[27px] duration-300 btn btn--2 overflow-hidden relative text-center"
                       href="#"
                     >
                       <span class="btn__text">BOOK NOW</span>
@@ -149,23 +153,23 @@
         class="sm:bg-[url('./assetes/img/png/Hero-bg.png')] bg-cover mt-[103px] sm:mt-[88px] lg:mt-[98px] max-sm:bg-[rgba(215,217,221,0.50)]"
       >
         <div
-          class="max-w-[1220px] px-[32px] sm:px-[40px] mx-auto pt-[35px] sm:pt-[150px] xl:pt-[196px] pb-[60px] sm:pb-[93px]"
+          class="max-w-[1220px] px-8 sm:px-10 mx-auto pt-[35px] sm:pt-[150px] xl:pt-[193px] pb-[58px] sm:pb-20"
         >
           <div class="max-w-[511px]">
             <p
-              class="text-[32px] sm:text-[40px] md:text-[50px] lg:text-[60px] xl:text-[70px] text-[#494336] sm:text-[#D7D9DD] leading-[104%]"
+              class="text-[32px] sm:text-[40px] md:text-[50px] lg:text-[60px] xl:text-[70px] text-[#494336] sm:text-[#D7D9DD] leading-[normal]"
             >
               Welcome to <br />
               Nebula Vets
             </p>
             <p
-              class="roboto-mono text-[#494336] sm:text-[#D7D9DD] text-base md:text-lg lg:text-2xl xl:text-[28px] mb-[45px] sm:mb-[38px] max-sm:!leading-[175%] sm:mt-[28px]"
+              class="roboto-mono text-[#494336] sm:text-[#D7D9DD] text-base md:text-lg lg:text-2xl xl:text-[28px] mb-[45px] sm:mb-[38px] max-sm:!leading-[175%] sm:mt-[28px] mt-2"
             >
               Reinventing Pet Medicine
             </p>
             <div>
               <a
-                class="roboto-mono text-[#494336] font-medium text-base xl:text-lg py-2 xl:py-3 px-[18px] md:px-[30px] xl:px-[38px] bg-gradient !rounded-[27px] duration-300 btn btn--2 overflow-hidden relative text-center"
+                class="roboto-mono text-[#494336] font-medium text-base xl:text-lg py-[6px] xl:py-3 px-[18px] md:px-[30px] xl:px-[38px] bg-gradient !rounded-[27px] duration-300 btn btn--2 overflow-hidden relative text-center"
                 href="#"
               >
                 <span class="btn__text">BOOK NOW</span>
@@ -173,9 +177,9 @@
             </div>
           </div>
         </div>
-        <div class="sm:hidden max-w-[640px]">
+        <div class="sm:hidden max-w-[640px] mt-[-29.5%]">
           <img
-            class="w-full mt-[-25%]"
+            class="w-full"
             src="./assetes/img/png/hero-bg-small-s.png"
             alt=""
           />
@@ -186,11 +190,9 @@
     <section>
       <div class="bg-[rgba(215,217,221,0.50)]">
         <div
-          class="max-w-[1160px] px-[32px] sm:px-[40px] py-[56px] sm:py-[82px] mx-auto"
+          class="max-w-[1160px] px-8 sm:px-10 py-[56px] sm:py-[82px] mx-auto"
         >
-          <div
-            class="flex gap-[13px] sm:gap-[57px] sm:items-center max-sm:flex-col"
-          >
+          <div class="flex gap-[13px] sm:gap-[57px] max-sm:flex-col">
             <p
               class="text-2xl sm:text-[26px] md:text-[30px] lg:text-[36px] text-[#494336] text-start"
             >
@@ -214,31 +216,31 @@
     <section>
       <div class="bg-[#494336]">
         <div
-          class="max-w-[1160px] px-[32px] sm:px-[40px] py-[60px] sm:py-[80px] mx-auto"
+          class="max-w-[1160px] px-8 sm:px-10 py-[60px] sm:py-[80px] mx-auto"
         >
           <p
-            class="text-[#D7D9DD] text-2xl sm:text-[30px] md:text-[36px] lg:text-[42px] xl:text-[48px] mb-10 max-sm:text-center md:mb-[58px]"
+            class="text-[#D7D9DD] text-2xl sm:text-[30px] md:text-[36px] lg:text-[42px] xl:text-[48px] mb-10 max-sm:text-center md:mb-[58px] leading-[normal]"
           >
             Why choose Nebula Vets?
           </p>
           <div
-            class="flex max-sm:flex-wrap gap-y-0 sm:gap-x-[25px] max-[850px]:gap-x-[40px] gap-x-[70px]"
+            class="flex max-sm:flex-wrap gap-y-0 sm:gap-x-[25px] max-[850px]:gap-x-[40px] gap-x-[70px] sm:justify-between"
           >
-            <div class="w-full sm:w-[50%]">
-              <button
+            <div class="w-full sm:w-[50%] sm:max-w-[480px]">
+              <div
                 class="toggle-button w-full items-center border-b-[2px] border-solid border-c-liner group"
               >
-                <div
-                  class="flex justify-between w-full items-center pb-[20px] sm:pb-[32px] gap-1"
+                <button
+                  class="flex justify-between w-full items-center mb-[26.6px] sm:mb-[32px] gap-1"
                 >
                   <p
-                    class="text-base md:text-lg lg:text-xl text-[#D7D9DD] font-semibold text-start !leading-[150%] roboto-mono"
+                    class="text-base md:text-lg lg:text-xl xl:text-2xl text-[#D7D9DD] font-semibold text-start !leading-[150%] roboto-mono"
                   >
                     Cutting-Edge Technology
                   </p>
                   <span class="transition-transform">
                     <svg
-                      class="max-md:w-6"
+                      class="max-md:w-6 max-md:h-6"
                       xmlns="http://www.w3.org/2000/svg"
                       width="30"
                       height="30"
@@ -286,7 +288,7 @@
                       </defs>
                     </svg>
                   </span>
-                </div>
+                </button>
                 <p
                   class="hidden text-sm sm:text-base text-[#787878] text-start description text-start pr-2.5 pb-6"
                 >
@@ -295,21 +297,21 @@
                   aspernatur tempore deserunt? A magni eaque consequuntur
                   voluptatum, alias cum sit iste deleniti.
                 </p>
-              </button>
-              <button
+              </div>
+              <div
                 class="toggle-button w-full items-center border-b-[2px] border-solid border-c-liner group"
               >
-                <div
-                  class="flex justify-between w-full items-center pt-[15px] pb-[20px] sm:py-[32px] gap-1"
+                <button
+                  class="flex justify-between w-full items-center mt-[15px] mb-[26.6px] sm:my-[32px] gap-1"
                 >
                   <p
-                    class="text-base md:text-lg lg:text-xl text-[#D7D9DD] font-semibold text-start !leading-[150%] roboto-mono"
+                    class="text-base md:text-lg lg:text-xl xl:text-2xl text-[#D7D9DD] font-semibold text-start !leading-[150%] roboto-mono"
                   >
                     Independant
                   </p>
                   <span class="transition-transform">
                     <svg
-                      class="max-md:w-6"
+                      class="max-md:w-6 max-md:h-6"
                       xmlns="http://www.w3.org/2000/svg"
                       width="30"
                       height="30"
@@ -357,7 +359,7 @@
                       </defs>
                     </svg>
                   </span>
-                </div>
+                </button>
                 <p
                   class="hidden text-sm sm:text-base text-[#787878] text-start description text-start pr-2.5 pb-6"
                 >
@@ -366,21 +368,21 @@
                   aspernatur tempore deserunt? A magni eaque consequuntur
                   voluptatum, alias cum sit iste deleniti.
                 </p>
-              </button>
-              <button
+              </div>
+              <div
                 class="toggle-button w-full items-center border-b-[2px] border-solid border-c-liner group"
               >
-                <div
-                  class="flex justify-between w-full items-center pt-[15px] pb-[20px] sm:py-[32px] gap-1"
+                <button
+                  class="flex justify-between w-full items-center mt-[15px] mb-[26.6px] sm:my-[32px] gap-1"
                 >
                   <p
-                    class="text-base md:text-lg lg:text-xl text-[#D7D9DD] font-semibold text-start !leading-[150%] roboto-mono"
+                    class="text-base md:text-lg lg:text-xl xl:text-2xl text-[#D7D9DD] font-semibold text-start !leading-[150%] roboto-mono"
                   >
                     Progressive Medicine
                   </p>
                   <span class="transition-transform">
                     <svg
-                      class="max-md:w-6"
+                      class="max-md:w-6 max-md:h-6"
                       xmlns="http://www.w3.org/2000/svg"
                       width="30"
                       height="30"
@@ -428,7 +430,7 @@
                       </defs>
                     </svg>
                   </span>
-                </div>
+                </button>
                 <p
                   class="hidden text-sm sm:text-base text-[#787878] text-start description text-start pr-2.5 pb-6"
                 >
@@ -437,23 +439,23 @@
                   aspernatur tempore deserunt? A magni eaque consequuntur
                   voluptatum, alias cum sit iste deleniti.
                 </p>
-              </button>
+              </div>
             </div>
-            <div class="w-full sm:w-[50%]">
-              <button
+            <div class="w-full sm:w-[50%] sm:max-w-[480px]">
+              <div
                 class="toggle-button w-full items-center border-b-[2px] border-solid border-c-liner group"
               >
-                <div
-                  class="flex justify-between w-full items-center max-sm:pt-[15px] pb-[20px] sm:pb-[32px] gap-1"
+                <button
+                  class="flex justify-between w-full items-center max-sm:mt-[15px] mb-[26.6px] sm:mb-[32px] gap-1"
                 >
                   <p
-                    class="text-base md:text-lg lg:text-xl text-[#D7D9DD] font-semibold text-start !leading-[150%] roboto-mono"
+                    class="text-base md:text-lg lg:text-xl xl:text-2xl text-[#D7D9DD] font-semibold text-start !leading-[150%] roboto-mono"
                   >
                     Environmentally conscious​
                   </p>
                   <span class="transition-transform">
                     <svg
-                      class="max-md:w-6"
+                      class="max-md:w-6 max-md:h-6"
                       xmlns="http://www.w3.org/2000/svg"
                       width="30"
                       height="30"
@@ -501,7 +503,7 @@
                       </defs>
                     </svg>
                   </span>
-                </div>
+                </button>
                 <p
                   class="hidden text-sm sm:text-base text-[#787878] text-start description text-start pr-2.5 pb-6"
                 >
@@ -510,21 +512,21 @@
                   aspernatur tempore deserunt? A magni eaque consequuntur
                   voluptatum, alias cum sit iste deleniti.
                 </p>
-              </button>
-              <button
+              </div>
+              <div
                 class="toggle-button w-full items-center border-b-[2px] border-solid border-c-liner group"
               >
-                <div
-                  class="flex justify-between w-full items-center pt-[15px] pb-[20px] sm:py-[32px] gap-1"
+                <button
+                  class="flex justify-between w-full items-center mt-[15px] mb-[26.6px] sm:my-[32px] gap-1"
                 >
                   <p
-                    class="text-base md:text-lg lg:text-xl text-[#D7D9DD] font-semibold text-start !leading-[150%] roboto-mono"
+                    class="text-base md:text-lg lg:text-xl xl:text-2xl text-[#D7D9DD] font-semibold text-start !leading-[150%] roboto-mono"
                   >
                     Expert Team
                   </p>
                   <span class="transition-transform">
                     <svg
-                      class="max-md:w-6"
+                      class="max-md:w-6 max-md:h-6"
                       xmlns="http://www.w3.org/2000/svg"
                       width="30"
                       height="30"
@@ -572,7 +574,7 @@
                       </defs>
                     </svg>
                   </span>
-                </div>
+                </button>
                 <p
                   class="hidden text-sm sm:text-base text-[#787878] text-start description text-start pr-2.5 pb-6"
                 >
@@ -581,21 +583,21 @@
                   aspernatur tempore deserunt? A magni eaque consequuntur
                   voluptatum, alias cum sit iste deleniti.
                 </p>
-              </button>
-              <button
+              </div>
+              <div
                 class="toggle-button w-full items-center border-b-[2px] border-solid border-c-liner group"
               >
-                <div
-                  class="flex justify-between w-full items-center pt-[15px] pb-[20px] sm:py-[32px] gap-1"
+                <button
+                  class="flex justify-between w-full items-center mt-[15px] mb-[26.6px] sm:my-[32px] gap-1"
                 >
                   <p
-                    class="text-base md:text-lg lg:text-xl text-[#D7D9DD] font-semibold text-start !leading-[150%] roboto-mono"
+                    class="text-base md:text-lg lg:text-xl xl:text-2xl text-[#D7D9DD] font-semibold text-start !leading-[150%] roboto-mono"
                   >
                     Education
                   </p>
                   <span class="transition-transform">
                     <svg
-                      class="max-md:w-6"
+                      class="max-md:w-6 max-md:h-6"
                       xmlns="http://www.w3.org/2000/svg"
                       width="30"
                       height="30"
@@ -643,7 +645,7 @@
                       </defs>
                     </svg>
                   </span>
-                </div>
+                </button>
                 <p
                   class="hidden text-sm sm:text-base text-[#787878] text-start description text-start pr-2.5 pb-6"
                 >
@@ -652,7 +654,7 @@
                   aspernatur tempore deserunt? A magni eaque consequuntur
                   voluptatum, alias cum sit iste deleniti.
                 </p>
-              </button>
+              </div>
             </div>
           </div>
         </div>
@@ -660,16 +662,14 @@
     </section>
     <!-- our services -->
     <section>
-      <div
-        class="max-w-[1160px] px-[32px] sm:px-[40px] py-[60px] sm:py-[80px] mx-auto"
-      >
+      <div class="max-w-[1160px] px-8 sm:px-10 py-[58px] sm:py-[78px] mx-auto">
         <p
-          class="text-2xl sm:text-[30px] md:text-[36px] lg:text-[42px] xl:text-[48px] text-[#494336] mb-[13px] md:mb-[20px] lg:mb-[30px]"
+          class="text-2xl sm:text-[30px] md:text-[36px] lg:text-[42px] xl:text-[48px] text-[#494336] mb-[13px] md:mb-[20px] lg:mb-[30px] leading-[normal]"
         >
           Our Services
         </p>
         <p
-          class="text-sm sm:text-base md:text-lg lg:text-xl text-[#494336] max-w-[770px] max-sm:leading-[157%] mb-[45px] sm:mb-10"
+          class="text-sm sm:text-base md:text-lg lg:text-xl text-[#494336] max-w-[770px] max-sm:leading-[157%] sm:leading-[130%] mb-[45px] sm:mb-10"
         >
           We are proud to offer a comprehensive range of exceptional clinical
           services to cater to all your pet's needs. From routine wellness
@@ -679,7 +679,7 @@
         </p>
         <div>
           <a
-            class="roboto-mono text-[#494336] font-medium text-base xl:text-lg py-2 xl:py-3 px-[18px] md:px-[30px] xl:px-[38px] bg-gradient !rounded-[27px] duration-300 btn btn--2 overflow-hidden relative text-center"
+            class="roboto-mono text-[#494336] font-medium text-base xl:text-lg py-[6px] xl:py-3 px-[18px] md:px-[30px] xl:px-[38px] bg-gradient !rounded-[27px] duration-300 btn btn--2 overflow-hidden relative text-center"
             href="./sevices.html"
           >
             <span class="btn__text">LEARN MORE</span>
@@ -741,7 +741,7 @@
               </div>
               <div class="text-[#D7D9DD]">
                 <p
-                  class="text-2xl sm:text-[30px] block lg:text-[36px] pt-3 sm:pt-7 md:pt-10 2xl:whitespace-nowrap lg:pt-[30px]"
+                  class="text-2xl sm:text-[30px] block lg:text-[36px] pt-3 sm:pt-7 md:pt-10 xl:whitespace-nowrap lg:pt-[30px]"
                 >
                   Sick Patient Care
                 </p>
@@ -846,13 +846,13 @@
       </div>
       <div class="relative">
         <div
-          class="swiper-pagination absolute !top-[-50px] sm:!top-[-100px] !right-0 !left-0 !w-auto"
+          class="swiper-pagination absolute !top-[-80px] sm:!top-[-100px] !right-0 !left-0 !w-auto"
         ></div>
       </div>
     </section>
     <!-- about -->
     <section>
-      <div class="bg-[#D7D9DD80] py-[33px] sm:py-12 lg:py-[80px] relative">
+      <div class="bg-[#D7D9DD80] pt-[33px] sm:py-12 lg:py-[80px] relative">
         <div
           class="absolute -bottom-0 right-0 max-w-[189px] lg:top-0 lg:max-w-[348px] xl:max-w-[392px]"
         >
@@ -862,9 +862,9 @@
             alt="cat-dog-ab-img"
           />
         </div>
-        <div class="max-w-[1440px] !px-[32px] md:!px-[70px] !mx-auto">
+        <div class="max-w-[1440px] !px-8 md:!px-[70px] !mx-auto">
           <div
-            class="flex gap-[69px] flex-wrap lg:flex-nowrap justify-between items-center"
+            class="flex gap-y-[60px] gap-x-[69px] flex-wrap lg:flex-nowrap justify-between items-center"
           >
             <div class="lg:min-w-[400px] max-w-[591px] mx-auto lg:mx-0">
               <img
@@ -874,11 +874,13 @@
               />
             </div>
             <div class="text-[#494336] max-w-[639px]">
-              <h2 class="text-2xl sm:text-[35px] lg:text-[48px]">
+              <h2
+                class="text-2xl sm:text-[35px] lg:text-[48px] leading-[normal]"
+              >
                 About Nebula Vets ?
               </h2>
               <p
-                class="!leading-[130%] text-sm sm:text-base lg:text-lg mt-[13px] md:mt-6 mt-[38px]"
+                class="leading-[157%] md:!leading-[130%] text-sm sm:text-base lg:text-lg lg:text-xl mt-[13px] md:mt-6 lg:mt-[38px]"
               >
                 Founded on a strong set of core values, the story of Nebula Vets
                 began with Daniel Hodnett-Lewis, a visionary veterinary surgeon
@@ -888,9 +890,9 @@
                 the way pets are treated and cared for. Here's the story of
                 Nebula Vets:
               </p>
-              <div class="mt-12 pb-[60px]">
+              <div class="mt-10 pb-[60px]">
                 <a
-                  class="roboto-mono text-[#494336] font-medium text-base xl:text-lg py-2 xl:py-3 px-[18px] md:px-[30px] xl:px-[38px] bg-gradient !rounded-[27px] duration-300 btn btn--2 overflow-hidden relative text-center"
+                  class="roboto-mono text-[#494336] font-medium text-base xl:text-lg py-[6px] xl:py-3 px-[18px] md:px-[30px] xl:px-[38px] bg-gradient !rounded-[27px] duration-300 btn btn--2 overflow-hidden relative text-center"
                   href="./about.html"
                 >
                   <span class="btn__text">LEARN MORE</span>
@@ -916,23 +918,23 @@
           />
         </div>
         <div
-          class="max-w-[1160px] px-[32px] sm:px-[40px] py-[60px] sm:py-[80px] mx-auto"
+          class="max-w-[1160px] px-8 sm:px-10 py-[60px] sm:py-[80px] mx-auto"
         >
           <div class="max-w-[568px]">
             <p
-              class="text-2xl sm:text-[30px] md:text-[36px] lg:text-[42px] xl:text-[48px] text-[#D7D9DD] mb-[13px] sm:mb-[20px] md:mb-[30px]"
+              class="text-2xl sm:text-[30px] md:text-[36px] lg:text-[42px] xl:text-[48px] text-[#D7D9DD] mb-[13px] sm:mb-[20px] leading-[normal]"
             >
               Our Mission
             </p>
             <p
-              class="text-sm sm:text-base md:text-lg lg:text-xl text-[#D7D9DD] !leading-[26px] mb-[38px] sm:mb-10"
+              class="text-sm sm:text-base md:text-lg lg:text-xl text-[#D7D9DD] leading-[157%] sm:!leading-[26px] mb-[38px] sm:mb-10"
             >
               Our Mission is to establish a new standard of excellence in
               veterinary care, driven by an unwavering ethical conscience.
             </p>
             <div>
               <a
-                class="roboto-mono text-[#494336] font-medium text-base xl:text-lg py-2 xl:py-3 px-[18px] md:px-[30px] xl:px-[38px] bg-gradient !rounded-[27px] duration-300 btn btn--2 overflow-hidden relative text-center"
+                class="roboto-mono text-[#494336] font-medium text-base xl:text-lg py-[6px] xl:py-3 px-[18px] md:px-[30px] xl:px-[38px] bg-gradient !rounded-[27px] duration-300 btn btn--2 overflow-hidden relative text-center"
                 href="#"
               >
                 <span class="btn__text">BOOK NOW</span>
