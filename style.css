@@ -15,9 +15,6 @@ body {
   border-image: linear-gradient(90deg, #ffa280 0%, #8fd9d9 100%);
   border-image-slice: 1;
 }
-.text-underline {
-  text-decoration: underline;
-}
 .swiper-pagination-bullet-active {
   background-color: #494336 !important;
 }
@@ -83,7 +80,6 @@ body {
     line-height: 40px;
   }
 }
-
 section {
   overflow-x: hidden;
 }
