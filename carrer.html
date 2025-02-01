@@ -27,14 +27,18 @@
       justify-content: center;
       align-items: center;
     }
+    .swiper-pagination-bullet {
+      background: #d9d9d9 !important;
+      opacity: 100%;
+      height: 10px;
+      width: 10px;
+    }
     .swiper-pagination-bullet-active {
       background: linear-gradient(
         45deg,
         rgba(255, 162, 128, 1),
         rgba(143, 217, 217, 1)
       ) !important;
-      height: 10px;
-      width: 10px;
     }
   </style>
   <body>
@@ -161,11 +165,11 @@
       </div>
     </div>
     <!-- hero-section -->
-    <div data-aos="fade-down" data-aos-duration="1000">
+    <div data-aos-once="true" data-aos="fade-down" data-aos-duration="1000">
       <section>
         <div class="bg-[#494336] mt-[102px] sm:mt-[88px] lg:mt-[98px] relative">
           <div
-            class="absolute right-0 max-sm:top-3 sm:mt-5 md:top-10 max-sm:max-w-[220px] max-md:max-w-[272px] max-lg:max-w-[400px] max-xl:max-w-[500px] xl:max-w-[600px]"
+            class="absolute right-0 max-sm:top-3 sm:mt-5 md:top-[125px] max-sm:max-w-[220px] max-md:max-w-[272px] max-lg:max-w-[400px] max-xl:max-w-[500px] xl:max-w-[600px]"
           >
             <img
               class="w-full"
@@ -343,6 +347,7 @@
           <div>
             <button
               class="toggle-button w-full items-center border-b-[2px] border-solid border-c-liner pb-[32px] group"
+              data-aos-once="true"
               data-aos="fade-right"
               data-aos-duration="1000"
             >
@@ -416,6 +421,7 @@
             </button>
             <button
               class="toggle-button w-full items-center border-b-[2px] border-solid border-c-liner py-8 group"
+              data-aos-once="true"
               data-aos="fade-left"
               data-aos-duration="1000"
             >
@@ -488,6 +494,7 @@
             </button>
             <button
               class="toggle-button w-full items-center border-b-[2px] border-solid border-c-liner py-8 group"
+              data-aos-once="true"
               data-aos="fade-right"
               data-aos-duration="1000"
             >
@@ -561,6 +568,7 @@
             </button>
             <button
               class="toggle-button w-full items-center border-b-[2px] border-solid border-c-liner py-8 group"
+              data-aos-once="true"
               data-aos="fade-left"
               data-aos-duration="1000"
             >
@@ -633,6 +641,7 @@
             </button>
             <button
               class="toggle-button w-full items-center border-b-[2px] border-solid border-c-liner py-8 group"
+              data-aos-once="true"
               data-aos="fade-right"
               data-aos-duration="1000"
             >
@@ -706,6 +715,7 @@
             </button>
             <button
               class="toggle-button w-full items-center border-b-[2px] border-solid border-c-liner py-8 group"
+              data-aos-once="true"
               data-aos="fade-left"
               data-aos-duration="1000"
             >
@@ -796,6 +806,7 @@
         </div>
         <div
           class="max-w-[1160px] px-8 sm:px-10 py-15 sm:py-[80px] mx-auto"
+          data-aos-once="true"
           data-aos="zoom-out"
           data-aos-duration="800"
         >
@@ -1116,6 +1127,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
+      once: true;
     </script>
   </body>
 </html>

@@ -18,9 +18,23 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <style>
+    .swiper-pagination-bullet-active {
+      background: linear-gradient(
+        45deg,
+        rgba(255, 162, 128, 1),
+        rgba(143, 217, 217, 1)
+      ) !important;
+    }
     .swiper-pagination-bullet {
       width: 15px;
       height: 15px;
+      background-color: #494336 !important;
+      opacity: 100%;
+    }
+    @media (max-width: 640px) {
+      .swiper-pagination-bullet {
+        background-color: #d9d9d9 !important;
+      }
     }
     @media (max-width: 700px) {
       .swiper-pagination-bullet {
@@ -155,6 +169,7 @@
     <!-- hero-section -->
     <section>
       <div
+        data-aos-once="true"
         data-aos="fade-down"
         data-aos-duration="1000"
         class="bg-[#494336] max-[950px]:bg-[url('./assetes/img/png/hero-s-cat-d-img-2.png')] min-[950px]:bg-[url('./assetes/img/png/hero-section-cat-dog-img.png')] bg-no-repeat bg-right-bottom mt-[102px] sm:mt-[88px] lg:mt-[98px]"
@@ -291,7 +306,9 @@
         </div>
       </div>
       <div class="relative">
-        <div class="swiper-pagination !bottom-2 sm:!-bottom-10"></div>
+        <div
+          class="swiper-pagination !bottom-2 sm:!-bottom-10 lg:!-bottom-15"
+        ></div>
       </div>
     </div>
     <!-- tab section -->
@@ -332,131 +349,135 @@
           </div>
         </div>
       </div>
-      <div class="tab-content hidden" id="tab1">
-        <div class="flex max-md:flex-wrap max-w-[1440px] mx-auto">
-          <div
-            data-aos="fade-right"
-            data-aos-duration="1000"
-            class="max-w-[620px]"
-          >
+      <div class="tab-content hidden relative" id="tab1">
+        <div>
+          <div class="flex max-md:flex-wrap max-w-[1440px] mx-auto">
             <div
-              class="pt-[120px] max-md:pb-[60px] md:pt-20 px-[0px] lg:pl-[48px] lg:pr-[67px]"
+              data-aos-once="true"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              class="max-w-[620px]"
             >
-              <img
-                class="max-w-[218px] md:max-w-[250px] xl:max-w-[376px] max-md:mb-[-40px]"
-                src="./assetes/img/png/Preventive care big.png"
-                alt="preventive-care"
-              />
-              <div class="px-8 lg:pl-6">
-                <p
-                  class="text-[#494336] text-[32px] md:text-4xl lg:text-[42px] xl:text-5xl mt-[3px]"
-                >
-                  Preventive Care
-                </p>
-                <p
-                  class="roboto-mono text-[#494336] text-base sm:text-lg md:text-xl lg:text-2xl leading-[150%] mt-[14px] mb-[33px]"
-                >
-                  Your pet's well-being at the forefront of our practice.
-                </p>
-                <p
-                  class="text-[#494336] text-sm sm:text-base md:text-lg lg:text-xl leading-[157%] md:leading-[130%] md:mb-[48px]"
-                >
-                  At Nebula Vets, we take a proactive approach to your pet's
-                  healthcare, prioritizing their well-being and aiming to
-                  maximize their quality of life. We believe in the importance
-                  of preventive medicine and early detection of potential health
-                  issues. By implementing regular wellness check-ups and
-                  comprehensive screenings, we can identify and address any
-                  problems at their earliest stages.
-                </p>
-                <div class="max-md:!hidden">
-                  <a
-                    class="roboto-mono text-[#494336] font-medium text-base xl:text-lg py-2 xl:py-3 px-[18px] md:px-[30px] xl:px-[38px] bg-gradient !rounded-[27px] duration-300 btn btn--2 overflow-hidden relative text-center"
-                    href="#"
+              <div
+                class="pt-[120px] max-md:pb-[60px] md:pt-20 px-[0px] lg:pl-[48px] lg:pr-[67px]"
+              >
+                <img
+                  class="max-w-[218px] md:max-w-[250px] xl:max-w-[376px] max-md:mb-[-40px]"
+                  src="./assetes/img/png/Preventive care big.png"
+                  alt="preventive-care"
+                />
+                <div class="px-8 lg:pl-6">
+                  <p
+                    class="text-[#494336] text-[32px] md:text-4xl lg:text-[42px] xl:text-5xl mt-[3px]"
                   >
-                    <span class="btn__text">BOOK NOW</span>
-                  </a>
+                    Preventive Care
+                  </p>
+                  <p
+                    class="roboto-mono text-[#494336] text-base sm:text-lg md:text-xl lg:text-2xl leading-[150%] mt-[14px] mb-[33px]"
+                  >
+                    Your pet's well-being at the forefront of our practice.
+                  </p>
+                  <p
+                    class="text-[#494336] text-sm sm:text-base md:text-lg lg:text-xl leading-[157%] md:leading-[130%] md:mb-[48px]"
+                  >
+                    At Nebula Vets, we take a proactive approach to your pet's
+                    healthcare, prioritizing their well-being and aiming to
+                    maximize their quality of life. We believe in the importance
+                    of preventive medicine and early detection of potential
+                    health issues. By implementing regular wellness check-ups
+                    and comprehensive screenings, we can identify and address
+                    any problems at their earliest stages.
+                  </p>
+                  <div class="max-md:!hidden">
+                    <a
+                      class="roboto-mono text-[#494336] font-medium text-base xl:text-lg py-2 xl:py-3 px-[18px] md:px-[30px] xl:px-[38px] bg-gradient !rounded-[27px] duration-300 btn btn--2 overflow-hidden relative text-center"
+                      href="#"
+                    >
+                      <span class="btn__text">BOOK NOW</span>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div
-            data-aos="fade-left"
-            data-aos-duration="1000"
-            class="max-w-[820px] bg-[rgba(215,217,221,0.50)] lg:pr-4"
-          >
             <div
-              class="py-15 max-md:px-8 md:py-20 sm:pl-8 md:pl-[40px] lg:pl-[80px] xl:pl-[110px] pr-[34px] w-full"
+              data-aos-once="true"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              class="max-w-[820px] bg-[rgba(215,217,221,0.50)] lg:pr-4"
             >
-              <div class="pb-[59px] md:pb-[60px]">
-                <p
-                  class="roboto-mono text-[#494336] text-base md:text-lg lg:text-2xl xl:text-[28px] ml-1 md:ml-3"
-                >
-                  Animal Health Check
-                </p>
-                <p
-                  class="text-[#494336] text-sm sm:text-base md:text-lg lg:text-xl mt-[20px] mb-[30px] ml-1 md:ml-3 max-md:leading-[22px] md:leading-[26px]"
-                >
-                  Our practice offers the convenience of same or next-day
-                  appointments to ensure your furry companion receives prompt
-                  diagnostic evaluation and treatment. Our dedicated team
-                  prioritizes swift action, allowing us to quickly identify the
-                  issue at hand and provide the necessary care your pet
-                  requires.
-                </p>
-                <a
-                  class="roboto-mono text-[#494336] font-medium text-base xl:text-lg py-2 xl:py-3 px-[18px] md:px-[30px] xl:px-[38px] bg-gradient !rounded-[27px] duration-300 btn btn--2 overflow-hidden relative text-center"
-                  href="./animalhealth.html"
-                >
-                  <span class="btn__text">LEARN MORE</span>
-                </a>
-              </div>
               <div
-                class="pt-[31px] pb-[40px] md:pb-[60px] border-solid border-black border-b-[1px] border-t-[1px]"
+                class="py-15 max-md:px-8 md:py-20 sm:pl-8 md:pl-[40px] lg:pl-[80px] xl:pl-[110px] pr-[34px] w-full"
               >
-                <p
-                  class="roboto-mono text-[#494336] text-base md:text-lg lg:text-2xl xl:text-[28px] ml-1 md:ml-3"
+                <div class="pb-[59px] md:pb-[60px]">
+                  <p
+                    class="roboto-mono text-[#494336] text-base md:text-lg lg:text-2xl xl:text-[28px] ml-1 md:ml-3"
+                  >
+                    Animal Health Check
+                  </p>
+                  <p
+                    class="text-[#494336] text-sm sm:text-base md:text-lg lg:text-xl mt-[20px] mb-[30px] ml-1 md:ml-3 max-md:leading-[22px] md:leading-[26px]"
+                  >
+                    Our practice offers the convenience of same or next-day
+                    appointments to ensure your furry companion receives prompt
+                    diagnostic evaluation and treatment. Our dedicated team
+                    prioritizes swift action, allowing us to quickly identify
+                    the issue at hand and provide the necessary care your pet
+                    requires.
+                  </p>
+                  <a
+                    class="roboto-mono text-[#494336] font-medium text-base xl:text-lg py-2 xl:py-3 px-[18px] md:px-[30px] xl:px-[38px] bg-gradient !rounded-[27px] duration-300 btn btn--2 overflow-hidden relative text-center"
+                    href="./animalhealth.html"
+                  >
+                    <span class="btn__text">LEARN MORE</span>
+                  </a>
+                </div>
+                <div
+                  class="pt-[31px] pb-[40px] md:pb-[60px] border-solid border-black border-b-[1px] border-t-[1px]"
                 >
-                  Vaccinations
-                </p>
-                <p
-                  class="text-[#494336] text-sm sm:text-base md:text-lg lg:text-xl mt-[20px] mb-[30px] ml-1 md:ml-3 max-md:leading-[22px] md:leading-[26px]"
+                  <p
+                    class="roboto-mono text-[#494336] text-base md:text-lg lg:text-2xl xl:text-[28px] ml-1 md:ml-3"
+                  >
+                    Vaccinations
+                  </p>
+                  <p
+                    class="text-[#494336] text-sm sm:text-base md:text-lg lg:text-xl mt-[20px] mb-[30px] ml-1 md:ml-3 max-md:leading-[22px] md:leading-[26px]"
+                  >
+                    Vaccinations are a key component of your pet’s health and
+                    essential to prevent life-threatening diseases. Nebula vets
+                    offer's all the core and non-core vaccines your pet might
+                    need.
+                  </p>
+                  <a
+                    class="roboto-mono text-[#494336] font-medium text-base xl:text-lg py-2 xl:py-3 px-[18px] md:px-[30px] xl:px-[38px] bg-gradient !rounded-[27px] duration-300 btn btn--2 overflow-hidden relative text-center"
+                    href="./vaccination.html"
+                  >
+                    <span class="btn__text">LEARN MORE</span>
+                  </a>
+                </div>
+                <div
+                  class="pt-[31px] pb-[40px] md:pb-[60px] border-solid border-black border-b-[1px]"
                 >
-                  Vaccinations are a key component of your pet’s health and
-                  essential to prevent life-threatening diseases. Nebula vets
-                  offer's all the core and non-core vaccines your pet might
-                  need.
-                </p>
-                <a
-                  class="roboto-mono text-[#494336] font-medium text-base xl:text-lg py-2 xl:py-3 px-[18px] md:px-[30px] xl:px-[38px] bg-gradient !rounded-[27px] duration-300 btn btn--2 overflow-hidden relative text-center"
-                  href="./vaccination.html"
-                >
-                  <span class="btn__text">LEARN MORE</span>
-                </a>
-              </div>
-              <div
-                class="pt-[31px] pb-[40px] md:pb-[60px] border-solid border-black border-b-[1px]"
-              >
-                <p
-                  class="roboto-mono text-[#494336] text-base md:text-lg lg:text-2xl xl:text-[28px] ml-1 md:ml-3"
-                >
-                  Dentals
-                </p>
-                <p
-                  class="text-[#494336] text-sm sm:text-base md:text-lg lg:text-xl mt-[20px] mb-[30px] ml-1 md:ml-3 max-md:leading-[22px] md:leading-[26px]"
-                >
-                  Dental disease and smelly breath is common, and regular
-                  cleanings and exams can save your pet a lot of pain and
-                  disease later in life. Our advanced state-of-the-art dental
-                  suite is equipped for dental cleanings (scale and polish),
-                  extractions and any other care your pet may need.
-                </p>
-                <a
-                  class="roboto-mono text-[#494336] font-medium text-base xl:text-lg py-2 xl:py-3 px-[18px] md:px-[30px] xl:px-[38px] bg-gradient !rounded-[27px] duration-300 btn btn--2 overflow-hidden relative text-center"
-                  href="./dental.html"
-                >
-                  <span class="btn__text">LEARN MORE</span>
-                </a>
+                  <p
+                    class="roboto-mono text-[#494336] text-base md:text-lg lg:text-2xl xl:text-[28px] ml-1 md:ml-3"
+                  >
+                    Dentals
+                  </p>
+                  <p
+                    class="text-[#494336] text-sm sm:text-base md:text-lg lg:text-xl mt-[20px] mb-[30px] ml-1 md:ml-3 max-md:leading-[22px] md:leading-[26px]"
+                  >
+                    Dental disease and smelly breath is common, and regular
+                    cleanings and exams can save your pet a lot of pain and
+                    disease later in life. Our advanced state-of-the-art dental
+                    suite is equipped for dental cleanings (scale and polish),
+                    extractions and any other care your pet may need.
+                  </p>
+                  <a
+                    class="roboto-mono text-[#494336] font-medium text-base xl:text-lg py-2 xl:py-3 px-[18px] md:px-[30px] xl:px-[38px] bg-gradient !rounded-[27px] duration-300 btn btn--2 overflow-hidden relative text-center"
+                    href="./dental.html"
+                  >
+                    <span class="btn__text">LEARN MORE</span>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -465,6 +486,7 @@
       <div class="tab-content hidden" id="tab2">
         <div class="flex max-md:flex-wrap max-w-[1440px] mx-auto">
           <div
+            data-aos-once="true"
             data-aos="fade-right"
             data-aos-duration="1000"
             class="max-w-[620px]"
@@ -509,6 +531,7 @@
             </div>
           </div>
           <div
+            data-aos-once="true"
             data-aos="fade-left"
             data-aos-duration="1000"
             class="max-w-[820px] bg-[rgba(215,217,221,0.50)] lg:pr-4"
@@ -613,6 +636,7 @@
       <div class="tab-content hidden" id="tab3">
         <div class="flex max-md:flex-wrap max-w-[1440px] mx-auto">
           <div
+            data-aos-once="true"
             data-aos="fade-right"
             data-aos-duration="1000"
             class="max-w-[620px]"
@@ -655,6 +679,7 @@
             </div>
           </div>
           <div
+            data-aos-once="true"
             data-aos="fade-left"
             data-aos-duration="1000"
             class="max-w-[820px] bg-[rgba(215,217,221,0.50)] lg:pr-4"
@@ -716,6 +741,7 @@
       <div class="tab-content hidden" id="tab4">
         <div class="flex max-md:flex-wrap max-w-[1440px] mx-auto">
           <div
+            data-aos-once="true"
             data-aos="fade-right"
             data-aos-duration="1000"
             class="max-w-[620px]"
@@ -759,6 +785,7 @@
             </div>
           </div>
           <div
+            data-aos-once="true"
             data-aos="fade-left"
             data-aos-duration="1000"
             class="max-w-[820px] bg-[rgba(215,217,221,0.50)] lg:pr-4"
@@ -1234,6 +1261,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
+      once: true;
     </script>
   </body>
 </html>

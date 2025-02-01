@@ -143,6 +143,7 @@
     <!-- hero-section -->
     <section>
       <div
+        data-aos-once="true"
         data-aos="fade-down"
         data-aos-duration="1000"
         class="bg-[#494336] mt-[102px] sm:mt-[88px] lg:mt-[98px] relative"
@@ -188,13 +189,18 @@
     <section>
       <div class="bg-[rgba(215,217,221,0.50)] relative overflow-hidden">
         <div class="absolute bottom-0 w-full">
-          <img src="./assetes/img/png/location-bg.png" alt="bg-img" />
+          <img
+            class="w-full"
+            src="./assetes/img/png/location-bg.png"
+            alt="bg-img"
+          />
         </div>
         <div
           class="max-w-[1360px] md:px-10 mx-auto pt-15 md:pt-20 pb-[120px] md:pb-[140px] relative z-[1]"
         >
           <div class="flex items-center max-md:flex-wrap-reverse">
             <div
+              data-aos-once="true"
               data-aos="fade-right"
               data-aos-duration="1000"
               class="max-md:px-8 w-full md:w-[39.17%] flex flex-col gap-[38.5px] sm:gap-8 xl:ml-[100px] max-md:mt-15"
@@ -234,6 +240,7 @@
               </p>
             </div>
             <div
+              data-aos-once="true"
               data-aos="fade-left"
               data-aos-duration="1000"
               class="w-full md:w-[60.83%]"
@@ -280,6 +287,7 @@
         >
           <div
             class="max-w-[568px]"
+            data-aos-once="true"
             data-aos="zoom-in"
             data-aos-duration="1000"
           >
@@ -517,6 +525,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
+      once: true;
     </script>
   </body>
 </html>
