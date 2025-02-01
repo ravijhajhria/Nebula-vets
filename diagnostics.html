@@ -1344,7 +1344,7 @@
         </div>
       </div>
     </footer>
-    <script>
+      <script>
       const openBtn = document.getElementById("open-btn");
       const closeBtn = document.getElementById("close-btn");
       const sidebar = document.getElementById("sidebar");
@@ -1354,12 +1354,14 @@
         sidebar.classList.remove("translate-x-full");
         sidebar.classList.add("translate-x-0");
         overlay.classList.remove("hidden");
+        document.body.classList.add("no-scroll"); // Disable body scrolling
       });
 
       closeBtn.addEventListener("click", () => {
         sidebar.classList.remove("translate-x-0");
         sidebar.classList.add("translate-x-full");
         overlay.classList.add("hidden");
+        document.body.classList.remove("no-scroll"); // Enable body scrolling again
       });
 
       // Close the sidebar and overlay when clicking on the overlay
@@ -1367,6 +1369,7 @@
         sidebar.classList.remove("translate-x-0");
         sidebar.classList.add("translate-x-full");
         overlay.classList.add("hidden");
+        document.body.classList.remove("no-scroll"); // Enable body scrolling again
       });
     </script>
     <script>

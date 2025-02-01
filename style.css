@@ -83,3 +83,18 @@ body {
 section {
   overflow-x: hidden;
 }
+/* Initially, disable body scrolling */
+body.no-scroll {
+  overflow: hidden;
+}
+
+#sidebar {
+  height: 100vh;
+  overflow-y: auto; /* Sidebar ko scrollable banaye */
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50%; /* Sidebar width */
+  background-color: #494336;
+  transition: transform 0.3s ease;
+}
